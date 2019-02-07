@@ -11,8 +11,6 @@ using System.Linq;
         public float FindMean(params float[] numbers)
         {
             return numbers.Sum()/numbers.Length;
-        }
-
-        
+        } 
         public int FindSymbolMention(string[] strings) => strings.Where(s => s.Contains("=")).Sum(s => s.Length);
     }
