@@ -7,8 +7,13 @@
             first= first - second;
         }
 
-        public float arithmeticalMean(float first, float second)
+        public float FindMean(float first, float second)
         {
             return (fitst+second)/2;
+        }
+
+        public float FindMean(float first, float second, float thrid)
+        {
+            return (fitst+second+thrid)/3;
         }
     }
