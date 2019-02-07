@@ -21,7 +21,7 @@ using System.Linq;
             {
                 if(eachstring.Contains("="))
                 {
-                    symbolvalue++;
+                    symbolvalue = symbolvalue + eachstring.Count(x => x == '=');
                 }
             };
             return symbolvalue;
