@@ -14,16 +14,5 @@ using System.Linq;
         }
 
         
-        public int FindSymbolMention(params string[] strings)
-        {
-            int symbolvalue = 0;
-            foreach(string eachstring in strings)
-            {
-                if(eachstring.Contains("="))
-                {
-                    symbolvalue = symbolvalue + eachstring.Length;
-                }
-            };
-            return symbolvalue;
-        }
+        public int FindSymbolMention(string[] strings) => strings.Where(s => s.Contains("=")).Sum(s => s.Length);
     }
