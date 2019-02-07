@@ -1,9 +1,9 @@
  class Exchange
     {
-        public void Make(ref int firstVariable, ref int secondVariable)
+        public void Make(ref int first, ref int second)
         {
-            firstVariable = firstVariable + secondVariable;
-            secondVariable = firstVariable - secondVariable;
-            firstVariable = firstVariable - secondVariable;
+            first = first + second;
+            second = first - second;
+            first= first - second;
         }
     }
