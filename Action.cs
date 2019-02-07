@@ -12,5 +12,8 @@ using System.Linq;
         {
             return numbers.Sum()/numbers.Length;
         } 
-        public int FindSymbolMention(string[] strings) => strings.Where(s => s.Contains("=")).Sum(s => s.Length);
+        public int FindSymbolMention(string[] strings)
+		{
+		return strings.Where(s => s.Contains("=")).Sum(s => s.Length);
+		}
     }
