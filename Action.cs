@@ -16,7 +16,7 @@ using System.Linq;
         
         public int FindSymbolMention(params string[] strings)
         {
-		int symbolvalue = 0;
+            int symbolvalue = 0;
             foreach(string eachstring in strings)
             {
                 if(eachstring.Contains("="))
