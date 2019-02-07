@@ -1,3 +1,5 @@
+using System;
+using System.Linq;			
  class Action
     {
         public void Exchange(ref int first, ref int second)
@@ -11,14 +13,15 @@
             return numbers.Sum()/numbers.Length;
         }
 
-        private int symbolvalue {get; set;}
+        
         public int FindSymbolMention(params string[] strings)
         {
-            foreach(int eachstring in strings)
+		int symbolvalue = 0;
+            foreach(string eachstring in strings)
             {
                 if(eachstring.Contains("="))
                 {
-                    this.symbolvalue++;
+                    symbolvalue++;
                 }
             };
             return symbolvalue;
