@@ -6,14 +6,8 @@
             second = first - second;
             first= first - second;
         }
-
-        public float FindMean(float first, float second)
+        public float FindMean(params float[] numbers)
         {
-            return (fitst+second)/2;
-        }
-
-        public float FindMean(float first, float second, float thrid)
-        {
-            return (fitst+second+thrid)/3;
+            return numbers.Sum()/numbers.Length;
         }
     }
