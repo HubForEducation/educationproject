@@ -10,14 +10,17 @@
         {
             return numbers.Sum()/numbers.Length;
         }
-        public float FindSymbolMention(params string[] strings)
+
+        private int symbolvalue {get; set;}
+        public int FindSymbolMention(params string[] strings)
         {
-            int i = 0;
             foreach(int eachstring in strings)
             {
                 if(eachstring.Contains("="))
-                i++;
+                {
+                    this.symbolvalue++;
+                }
             };
-            return i;
+            return symbolvalue;
         }
     }
