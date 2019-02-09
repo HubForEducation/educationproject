@@ -30,7 +30,7 @@ class RomanNumerals
     {
         if (number>0 && number % 1 == 0)
         {
-            return numberCollection
+            return _numberCollection
             .Where(d => number >= d.Key)
             .Select(d => d.Value + RomanArabicConverting(number - d.Key))
             .FirstOrDefault();
