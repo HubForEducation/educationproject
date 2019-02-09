@@ -18,25 +18,41 @@ class Action
     {
         return strings.Where(s => s.Contains("=")).Sum(s => s.Length);
     }
+}
 
-    private Dictionary<int, string> numberCollection = new Dictionary<int, string>
+class RomanNumerals
+{
+    private readonly Dictionary<int, string> _numberCollection = new Dictionary<int, string>
     { { 1000, "M" },  { 900, "CM" },  { 500, "D" },  { 400, "CD" },  { 100, "C" },
                       { 90 , "XC" },  { 50 , "L" },  { 40 , "XL" },  { 10 , "X" },
                       { 9  , "IX" },  { 5  , "V" },  { 4  , "IV" },  { 1  , "I" } };
-
-    public string RomanArabicConverting(int number)
+    public string ToRoman(int number)
     {
-        return numberCollection
-        .Where(d => number >= d.Key)
-        .Select(d => d.Value + RomanArabicConverting(number - d.Key))
-        .FirstOrDefault();
+        if (number>0 && number % 1 == 0)
+        {
+            return numberCollection
+            .Where(d => number >= d.Key)
+            .Select(d => d.Value + RomanArabicConverting(number - d.Key))
+            .FirstOrDefault();
+        }
+        else
+        {
+            return "0";
+        }
     }
-
-    public int RomanArabicConverting(string number)
+    public int ToArabic(string number)
     {
-        return numberCollection
-        .Where(d => number.StartsWith(d.Value))
-        .Select(d => d.Key + RomanArabicConverting(number.Substring(d.Value.Length)))
-        .FirstOrDefault();
+        Regex mask = new Regex("^[I|V|X|C|L|C|D|M]*$");
+        if (mask.Match(number).Success == true)
+        {
+            return numberCollection
+            .Where(d => number.StartsWith(d.Value))
+            .Select(d => d.Key + RomanArabicConverting(number.Substring(d.Value.Length)))
+            .FirstOrDefault();
+        }
+        else
+        {
+            return 0;
+        }
     }
 }
