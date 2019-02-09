@@ -28,7 +28,7 @@ class RomanNumerals
                       { 9  , "IX" },  { 5  , "V" },  { 4  , "IV" },  { 1  , "I" } };
     public string ToRoman(int number)
     {
-        if (number>0 && number % 1 == 0)
+        if (number>0)
         {
             return _numberCollection
             .Where(d => number >= d.Key)
@@ -37,13 +37,14 @@ class RomanNumerals
         }
         else
         {
-            return "0";
+            throw new AggregateException("Bad imput params!");
         }
     }
     public int ToArabic(string number)
     {
-        Regex mask = new Regex("^[I|V|X|C|L|C|D|M]*$");
-        if (mask.Match(number).Success == true)
+        char [] allowedSimbols = new char[] {'I','V','X','C','L','D','M'};
+        
+        if (number.All.(c => allowedSimbols.Contains(c)) == true)
         {
             return numberCollection
             .Where(d => number.StartsWith(d.Value))
@@ -52,7 +53,7 @@ class RomanNumerals
         }
         else
         {
-            return 0;
+            throw new AggregateException("Bad imput params!");
         }
     }
 }
