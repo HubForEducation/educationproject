@@ -5771,11 +5771,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Anonymous\\Desktop\\Task\\Task.Tests\\Task.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Anonymous\\Desktop\\educationproject\\Task\\Task.Tests\\Task.Tests.csproj",
       "projectName": "Task.Tests",
-      "projectPath": "C:\\Users\\Anonymous\\Desktop\\Task\\Task.Tests\\Task.Tests.csproj",
+      "projectPath": "C:\\Users\\Anonymous\\Desktop\\educationproject\\Task\\Task.Tests\\Task.Tests.csproj",
       "packagesPath": "C:\\Users\\Anonymous\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Anonymous\\Desktop\\Task\\Task.Tests\\obj\\",
+      "outputPath": "C:\\Users\\Anonymous\\Desktop\\educationproject\\Task\\Task.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5794,8 +5794,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Anonymous\\Desktop\\Task\\Task\\Task.csproj": {
-              "projectPath": "C:\\Users\\Anonymous\\Desktop\\Task\\Task\\Task.csproj"
+            "C:\\Users\\Anonymous\\Desktop\\educationproject\\Task\\Task\\Task.csproj": {
+              "projectPath": "C:\\Users\\Anonymous\\Desktop\\educationproject\\Task\\Task\\Task.csproj"
             }
           }
         }

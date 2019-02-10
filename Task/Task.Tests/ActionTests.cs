@@ -10,7 +10,7 @@ namespace Task.Tests
         }
 
         [Test]
-        public void Exchange_0_and_0_0returned()
+        public void Exchange_4_and_8_8_and_4returned()
         {
             int first = 4;
             int second = 8;
