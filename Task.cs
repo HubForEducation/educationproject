@@ -42,18 +42,18 @@ class RomanNumerals
     }
     public int ToArabic(string number)
     {
-        char [] allowedSimbols = new char[] {'I','V','X','C','L','D','M'};
+        var allowedSimbols = _numberCollection.SelectMany(i => i.Value.ToCharArray()).Distinct.ToCharArray();
         
-        if (number.All.(c => allowedSimbols.Contains(c)) == true)
+        if (!number.All.(c => allowedSimbols.Contains(c)))
+        {
+            throw new AggregateException("Bad imput params!"); 
+        }
+        else
         {
             return numberCollection
             .Where(d => number.StartsWith(d.Value))
             .Select(d => d.Key + RomanArabicConverting(number.Substring(d.Value.Length)))
             .FirstOrDefault();
-        }
-        else
-        {
-            throw new AggregateException("Bad imput params!");
         }
     }
 }
