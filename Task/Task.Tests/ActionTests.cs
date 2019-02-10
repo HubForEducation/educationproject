@@ -51,5 +51,18 @@ namespace Task.Tests
 
             Assert.AreEqual(expected, actual);
         }
+
+        [Test]
+        public void FindMean_n88_and_42_n23_Expected()
+        {
+            int first = -88;
+            int second = 42;
+            int expected = -23;
+
+            Action action = new Action();
+            float actual = action.FindMean(first, second);
+
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
