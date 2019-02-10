@@ -4,3 +4,10 @@ C:\Users\Anonymous\Desktop\Task\Task\bin\Debug\Task.pdb
 C:\Users\Anonymous\Desktop\Task\Task\obj\Debug\Task.csproj.CoreCompileInputs.cache
 C:\Users\Anonymous\Desktop\Task\Task\obj\Debug\Task.exe
 C:\Users\Anonymous\Desktop\Task\Task\obj\Debug\Task.pdb
+C:\Users\Anonymous\Desktop\educationproject\Task\Task\bin\Debug\Task.exe.config
+C:\Users\Anonymous\Desktop\educationproject\Task\Task\bin\Debug\Task.exe
+C:\Users\Anonymous\Desktop\educationproject\Task\Task\bin\Debug\Task.pdb
+C:\Users\Anonymous\Desktop\educationproject\Task\Task\obj\Debug\Task.csprojAssemblyReference.cache
+C:\Users\Anonymous\Desktop\educationproject\Task\Task\obj\Debug\Task.csproj.CoreCompileInputs.cache
+C:\Users\Anonymous\Desktop\educationproject\Task\Task\obj\Debug\Task.exe
+C:\Users\Anonymous\Desktop\educationproject\Task\Task\obj\Debug\Task.pdb

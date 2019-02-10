@@ -14,7 +14,7 @@ namespace Task
             { 9  , "IX" },  { 5  , "V" },  { 4  , "IV" },  { 1  , "I" } };
         public string ToRoman(int number)
         {
-            if (!(number > 0))
+            if (number < 0)
             {
                 throw new AggregateException("Bad imput params!");
             }
