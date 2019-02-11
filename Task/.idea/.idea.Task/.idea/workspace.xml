@@ -42,13 +42,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Task.Tests/RomanNumeralsTests.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+            <state relative-caret-position="285">
+              <caret line="19" column="50" lean-forward="true" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
               <folding>
-                <marker date="1549894392970" expanded="true" signature="45:425" ph="{...}" />
-                <marker date="1549894392970" expanded="true" signature="83:423" ph="{...}" />
-                <marker date="1549894392970" expanded="true" signature="133:153" ph="{...}" />
-                <marker date="1549894392970" expanded="true" signature="293:417" ph="{...}" />
+                <marker date="1549894531821" expanded="true" signature="45:549" ph="{...}" />
+                <marker date="1549894531821" expanded="true" signature="83:547" ph="{...}" />
+                <marker date="1549894531821" expanded="true" signature="133:153" ph="{...}" />
+                <marker date="1549894531821" expanded="true" signature="417:541" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -160,12 +160,12 @@
       <updated>1549887444715</updated>
       <workItem from="1549887446865" duration="3530000" />
       <workItem from="1549892372735" duration="1531000" />
-      <workItem from="1549894255648" duration="138000" />
+      <workItem from="1549894255648" duration="283000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5199000" />
+    <option name="totallyTimeSpent" value="5344000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -313,13 +313,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Task.Tests/RomanNumeralsTests.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+        <state relative-caret-position="285">
+          <caret line="19" column="50" lean-forward="true" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
           <folding>
-            <marker date="1549894392970" expanded="true" signature="45:425" ph="{...}" />
-            <marker date="1549894392970" expanded="true" signature="83:423" ph="{...}" />
-            <marker date="1549894392970" expanded="true" signature="133:153" ph="{...}" />
-            <marker date="1549894392970" expanded="true" signature="293:417" ph="{...}" />
+            <marker date="1549894531821" expanded="true" signature="45:549" ph="{...}" />
+            <marker date="1549894531821" expanded="true" signature="83:547" ph="{...}" />
+            <marker date="1549894531821" expanded="true" signature="133:153" ph="{...}" />
+            <marker date="1549894531821" expanded="true" signature="417:541" ph="{...}" />
           </folding>
         </state>
       </provider>
