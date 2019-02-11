@@ -11,3 +11,10 @@ C:\Users\Anonymous\Desktop\educationproject\Task\Task\obj\Debug\Task.csprojAssem
 C:\Users\Anonymous\Desktop\educationproject\Task\Task\obj\Debug\Task.csproj.CoreCompileInputs.cache
 C:\Users\Anonymous\Desktop\educationproject\Task\Task\obj\Debug\Task.exe
 C:\Users\Anonymous\Desktop\educationproject\Task\Task\obj\Debug\Task.pdb
+D:\educationproject\Task\Task\bin\Debug\Task.exe.config
+D:\educationproject\Task\Task\bin\Debug\Task.exe
+D:\educationproject\Task\Task\bin\Debug\Task.pdb
+D:\educationproject\Task\Task\obj\Debug\Task.csprojAssemblyReference.cache
+D:\educationproject\Task\Task\obj\Debug\Task.csproj.CoreCompileInputs.cache
+D:\educationproject\Task\Task\obj\Debug\Task.exe
+D:\educationproject\Task\Task\obj\Debug\Task.pdb
