@@ -11,12 +11,11 @@ namespace Task.Tests
         }
 
         [TestCase(8, ExpectedResult="VIII")]
+        [TestCase(8, ExpectedResult="VIII")]
         public string ToRoman_Tests(int numeral)
         {
             var romanNumerals = new RomanNumerals();
-            var actual = romanNumerals.ToRoman(numeral);
-
-            return actual;
+            return romanNumerals.ToRoman(numeral);
         }
     }
 }
