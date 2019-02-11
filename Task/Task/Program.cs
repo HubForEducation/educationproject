@@ -1,15 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Task
 {
     public class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
+            var x = Console.ReadLine();
+            Console.WriteLine(x);
         }
     }
 }

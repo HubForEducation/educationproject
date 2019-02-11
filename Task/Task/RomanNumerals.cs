@@ -28,9 +28,9 @@ namespace Task
         }
         public int ToArabic(string number)
         {
-            var allowedSimbols = _numberCollection.SelectMany(i => i.Value.ToCharArray()).Distinct().ToArray();
+            var allowedSymbols = _numberCollection.SelectMany(i => i.Value.ToCharArray()).Distinct().ToArray();
 
-            if (!number.All(c => allowedSimbols.Contains(c)))
+            if (!number.All(c => allowedSymbols.Contains(c)))
             {
                 throw new AggregateException("Bad imput params!");
             }
