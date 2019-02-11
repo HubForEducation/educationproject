@@ -10,16 +10,16 @@ namespace Task.Tests
         {
         }
 
-        [TestCase(8)]
-        public void ToRoman_Tests(int numeral)
+        [TestCase(8, ExpectedResult="VIII")]
+        public string ToRoman_Tests(int numeral)
         {
-            var expected = "VIII";
+            
             //TODO Dynamic out params for Test Case.
 
             var romanNumerals = new RomanNumerals();
             var actual = romanNumerals.ToRoman(numeral);
 
-            Assert.AreEqual(expected, actual);
+            return actual;
         }
     }
 }

@@ -10,7 +10,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Task/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
@@ -19,6 +19,36 @@
                 <marker date="1549893145049" expanded="true" signature="29:125" ph="{...}" />
                 <marker date="1549893145049" expanded="true" signature="56:123" ph="{...}" />
                 <marker date="1549893145049" expanded="true" signature="97:117" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Task.Tests/ActionTests.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+              <folding>
+                <marker date="1549888401315" expanded="true" signature="44:620" ph="{...}" />
+                <marker date="1549888401315" expanded="true" signature="75:618" ph="{...}" />
+                <marker date="1549888401315" expanded="true" signature="125:145" ph="{...}" />
+                <marker date="1549888401315" expanded="true" signature="316:612" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Task.Tests/RomanNumeralsTests.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+              <folding>
+                <marker date="1549894219962" expanded="true" signature="45:481" ph="{...}" />
+                <marker date="1549894219962" expanded="true" signature="83:479" ph="{...}" />
+                <marker date="1549894219962" expanded="true" signature="133:153" ph="{...}" />
+                <marker date="1549894219962" expanded="true" signature="248:473" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -42,14 +72,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Task.Tests/ActionTests.cs" />
-        <option value="$PROJECT_DIR$/Task.Tests/RomanNumeralsTests.cs" />
         <option value="$PROJECT_DIR$/Task/RomanNumerals.cs" />
         <option value="$PROJECT_DIR$/Task/Action.cs" />
         <option value="$PROJECT_DIR$/Task/Program.cs" />
+        <option value="$PROJECT_DIR$/Task.Tests/RomanNumeralsTests.cs" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="289" />
     <option name="y" value="68" />
     <option name="width" value="1400" />
@@ -139,12 +169,12 @@
       <option name="presentableId" value="Default" />
       <updated>1549887444715</updated>
       <workItem from="1549887446865" duration="3530000" />
-      <workItem from="1549892372735" duration="772000" />
+      <workItem from="1549892372735" duration="1531000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4302000" />
+    <option name="totallyTimeSpent" value="5061000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -159,7 +189,7 @@
     <frame x="289" y="68" width="1400" height="949" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25373134" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25373134" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -173,7 +203,7 @@
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50074625" side_tool="true" weight="0.32965687" />
       <window_info anchor="bottom" id="Database Changes" order="6" />
       <window_info anchor="bottom" id="Performance Profiler" order="7" weight="0.32965687" />
-      <window_info anchor="bottom" id="Build" order="8" weight="0.32965687" />
+      <window_info active="true" anchor="bottom" id="Build" order="8" visible="true" weight="0.32965687" />
       <window_info anchor="bottom" id="Message" order="9" />
       <window_info anchor="bottom" id="Find" order="10" />
       <window_info anchor="bottom" id="Run" order="11" weight="0.32965687" />
@@ -225,19 +255,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Task.Tests/RomanNumeralsTests.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-          <folding>
-            <marker date="1549889095802" expanded="true" signature="45:498" ph="{...}" />
-            <marker date="1549889095802" expanded="true" signature="83:496" ph="{...}" />
-            <marker date="1549889095802" expanded="true" signature="133:153" ph="{...}" />
-            <marker date="1549889095802" expanded="true" signature="223:490" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Program Files/dotnet/sdk/2.2.103/Microsoft.Common.CurrentVersion.targets">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="751">
@@ -264,19 +281,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Task.Tests/ActionTests.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-          <folding>
-            <marker date="1549888401315" expanded="true" signature="44:620" ph="{...}" />
-            <marker date="1549888401315" expanded="true" signature="75:618" ph="{...}" />
-            <marker date="1549888401315" expanded="true" signature="125:145" ph="{...}" />
-            <marker date="1549888401315" expanded="true" signature="316:612" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Task/Action.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -299,6 +303,32 @@
             <marker date="1549893145049" expanded="true" signature="29:125" ph="{...}" />
             <marker date="1549893145049" expanded="true" signature="56:123" ph="{...}" />
             <marker date="1549893145049" expanded="true" signature="97:117" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task.Tests/ActionTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding>
+            <marker date="1549888401315" expanded="true" signature="44:620" ph="{...}" />
+            <marker date="1549888401315" expanded="true" signature="75:618" ph="{...}" />
+            <marker date="1549888401315" expanded="true" signature="125:145" ph="{...}" />
+            <marker date="1549888401315" expanded="true" signature="316:612" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task.Tests/RomanNumeralsTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+          <folding>
+            <marker date="1549894219962" expanded="true" signature="45:481" ph="{...}" />
+            <marker date="1549894219962" expanded="true" signature="83:479" ph="{...}" />
+            <marker date="1549894219962" expanded="true" signature="133:153" ph="{...}" />
+            <marker date="1549894219962" expanded="true" signature="248:473" ph="{...}" />
           </folding>
         </state>
       </provider>
