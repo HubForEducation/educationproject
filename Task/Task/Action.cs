@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 
 namespace Task
 {
@@ -6,9 +7,16 @@ namespace Task
     {
         public void Exchange(ref int first, ref int second)
         {
-            first = first + second;
-            second = first - second;
-            first = first - second;
+            if (first.GetType() != typeof(int) || second.GetType() != typeof(int))
+            {
+               throw new ArgumentException("Bad input params!");
+            }
+            else
+            {
+                first = first + second;
+                second = first - second;
+                first = first - second;               
+            }
         }
         public float FindMean(params float[] numbers)
         {

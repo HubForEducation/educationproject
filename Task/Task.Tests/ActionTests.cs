@@ -13,6 +13,9 @@ namespace Task.Tests
         [TestCase(4,8)]
         [TestCase(-88, 42)]
         [TestCase(88, -42)]
+        
+        [TestCase(88, -42.8f)]
+        
         public void Exchange_Tests(int first, int second)
         {
             var expectedFirst = second;
