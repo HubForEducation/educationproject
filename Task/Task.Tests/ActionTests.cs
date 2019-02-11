@@ -8,14 +8,11 @@ namespace Task.Tests
         public void Setup()
         {
         }
-        
-        [TestCase(0,0)]
-        [TestCase(4,8)]
+
+        [TestCase(0, 0)]
+        [TestCase(4, 8)]
         [TestCase(-88, 42)]
         [TestCase(88, -42)]
-        
-        [TestCase(88, -42.8f)]
-        
         public void Exchange_Tests(int first, int second)
         {
             var expectedFirst = second;
@@ -25,7 +22,7 @@ namespace Task.Tests
             action.Exchange(ref first, ref second);
 
             Assert.AreEqual(expectedFirst, first);
-            Assert.AreEqual(expectedSecond,second);
+            Assert.AreEqual(expectedSecond, second);
         }
     }
 }
