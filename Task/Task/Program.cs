@@ -6,8 +6,6 @@ namespace Task
     {
         private static void Main()
         {
-            var x = Console.ReadLine();
-            Console.WriteLine(x);
         }
     }
 }
