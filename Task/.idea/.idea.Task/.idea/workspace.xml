@@ -28,13 +28,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Task.Tests/RomanNumeralsTests.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+            <state relative-caret-position="240">
+              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
               <folding>
-                <marker date="1549888557063" expanded="true" signature="45:445" ph="{...}" />
-                <marker date="1549888557063" expanded="true" signature="83:443" ph="{...}" />
-                <marker date="1549888557063" expanded="true" signature="133:153" ph="{...}" />
-                <marker date="1549888557063" expanded="true" signature="223:437" ph="{...}" />
+                <marker date="1549889095802" expanded="true" signature="45:498" ph="{...}" />
+                <marker date="1549889095802" expanded="true" signature="83:496" ph="{...}" />
+                <marker date="1549889095802" expanded="true" signature="133:153" ph="{...}" />
+                <marker date="1549889095802" expanded="true" signature="223:490" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -115,7 +115,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected=".NET Project.Default">
+  <component name="RunManager">
     <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/Task/bin/Debug/Task.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -145,12 +145,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1549887444715</updated>
-      <workItem from="1549887446865" duration="1393000" />
+      <workItem from="1549887446865" duration="1642000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1393000" />
+    <option name="totallyTimeSpent" value="1642000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -172,10 +172,10 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="NuGet" weight="0.32965687" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Unit Tests" visible="true" weight="0.32965687" />
+      <window_info anchor="bottom" id="Version Control" sideWeight="0.49925372" visible="true" weight="0.32965687" />
+      <window_info anchor="bottom" id="Unit Tests" weight="0.32965687" />
       <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" weight="0.32965687" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.50074625" side_tool="true" weight="0.32965687" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Performance Profiler" />
       <window_info anchor="bottom" id="Build" weight="0.32965687" />
@@ -226,13 +226,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Task.Tests/RomanNumeralsTests.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        <state relative-caret-position="240">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
           <folding>
-            <marker date="1549888557063" expanded="true" signature="45:445" ph="{...}" />
-            <marker date="1549888557063" expanded="true" signature="83:443" ph="{...}" />
-            <marker date="1549888557063" expanded="true" signature="133:153" ph="{...}" />
-            <marker date="1549888557063" expanded="true" signature="223:437" ph="{...}" />
+            <marker date="1549889095802" expanded="true" signature="45:498" ph="{...}" />
+            <marker date="1549889095802" expanded="true" signature="83:496" ph="{...}" />
+            <marker date="1549889095802" expanded="true" signature="133:153" ph="{...}" />
+            <marker date="1549889095802" expanded="true" signature="223:490" ph="{...}" />
           </folding>
         </state>
       </provider>
