@@ -4,11 +4,6 @@ namespace Task.Tests
 {
     public class ActionTests
     {
-        [SetUp]
-        public void Setup()
-        {
-        }
-
         [TestCase(0, 0)]
         [TestCase(4, 8)]
         [TestCase(-88, 42)]
