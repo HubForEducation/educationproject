@@ -7,27 +7,37 @@ namespace Geometry
         static void Main(string[] args)
         {
             var geometry = new Geometry();
-            geometry.DrawSquare(10);
+            geometry.DrawSquare(-4);
         }
     }
 
     class Geometry
-    { 
+    {
         public void DrawSquare(int size)
         {
-            var horisontal = new string('*', size*2);
-            var vertical = new string(' ', size-2);
-            vertical = '*' + vertical + vertical + '*';
-
-            for (int i = 0; i < size; i++)
+            if (size <= 0)
             {
-                if (i == 0 || i == size-1)
+                throw new ArgumentOutOfRangeException("Only 1 and more!");
+            }
+            else
+            {
+                var brush = '*';
+                var font = ' ';
+
+                var horisontal = new string(brush, size);
+                var vertical = new string(font, size);
+                vertical = brush + vertical + brush;
+
+                for (int i = 0; i < size; i++)
                 {
-                    Console.WriteLine(horisontal);
-                }
-                else
-                {
-                    Console.WriteLine(vertical);
+                    if (i == 0 || i == size - 1)
+                    {
+                        Console.WriteLine(horisontal);
+                    }
+                    else
+                    {
+                        Console.WriteLine(vertical);
+                    }
                 }
             }
         }

@@ -9,7 +9,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -52,8 +52,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="FileSystemExplorer" />
-      <pane id="AssemblyExplorer" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -76,6 +74,8 @@
         </subPane>
         <option name="show-all-files" value="false" />
       </pane>
+      <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -133,11 +133,12 @@
       <workItem from="1549892372735" duration="1531000" />
       <workItem from="1549894255648" duration="4682000" />
       <workItem from="1550049707756" duration="1680000" />
+      <workItem from="1550067332059" duration="23000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11423000" />
+    <option name="totallyTimeSpent" value="11446000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -151,7 +152,7 @@
   <component name="ToolWindowManager">
     <frame x="433" y="45" width="1399" height="952" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2613891" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26512322" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -159,7 +160,7 @@
       <window_info anchor="bottom" id="NuGet" order="0" weight="0.32844934" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.49925372" weight="0.32844934" />
-      <window_info anchor="bottom" id="Unit Tests" order="3" visible="true" weight="0.32844934" />
+      <window_info active="true" anchor="bottom" id="Unit Tests" order="3" visible="true" weight="0.32844934" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.32844934" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50074625" side_tool="true" weight="0.32965687" />
       <window_info anchor="bottom" id="Database Changes" order="6" />
