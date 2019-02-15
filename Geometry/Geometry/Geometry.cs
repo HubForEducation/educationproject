@@ -1,5 +1,3 @@
-using System;
-
 namespace Geometry
 {
     public class Geometry
@@ -12,24 +10,18 @@ namespace Geometry
             }
             else
             {
-                var brush = '*';
-                var font = ' ';
-
-                var horisontal = new string(brush, size);
-                var vertical = new string(font, size);
-                vertical = brush + vertical + brush;
-
-                for (int i = 0; i < size; i++)
+                var brush = "*";
+                var body = new String(brush, n);
+                Console.WriteLine(body);
+                int i = 0;
+                while (i != size - 2)
                 {
-                    if (i == 0 || i == size - 1)
-                    {
-                        Console.WriteLine(horisontal);
-                    }
-                    else
-                    {
-                        Console.WriteLine(vertical);
-                    }
+                    Console.WriteLine(brush + new string(' ', size - 2) + brush);
+                    i++;
                 }
+                Console.WriteLine(body);
+                Console.ReadKey();
+            }
             }
         }
     }
