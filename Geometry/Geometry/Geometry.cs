@@ -18,7 +18,7 @@ namespace Geometry
             {
                 var line = new String(this.Brush, size);
                 Console.WriteLine(line);
-                int i = 0;
+                var i = 0;
                 while (i != size - 2)
                 {
                     Console.WriteLine(this.Brush + new string(this.Font, size - 2) + this.Font + this.Brush + Font);
@@ -40,7 +40,7 @@ namespace Geometry
             }
             else
             {
-                int count = 1;
+                var count = 1;
                 while (size-- != 0)
                 {
                     int c = count;
