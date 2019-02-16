@@ -16,12 +16,12 @@ namespace Geometry
             }
             else
             {
-                var line = new String(this.Brush, size);
+                var line = new String(Brush, size);
                 Console.WriteLine(line);
                 var i = 0;
                 while (i != size - 2)
                 {
-                    Console.WriteLine(this.Brush + new string(this.Font, size - 2) + this.Font + this.Brush + Font);
+                    Console.WriteLine(Brush + new string(this.Font, size - 2) + this.Font + this.Brush + Font);
                     i++;
                 }
 
