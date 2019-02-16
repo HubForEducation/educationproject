@@ -5,7 +5,7 @@ namespace Geometry
     public class Geometry
     {
         public char Brush { get; set; } = '*';
-        public char Font { get; set; } = '*';
+        public char Font { get; set; } = ' ';
 
         public void DrawSquare(int size)
         {
@@ -16,13 +16,12 @@ namespace Geometry
             }
             else
             {
-                var brush = '*';
-                var line = new String(Brush, size);
+                var line = new String(this.Brush, size);
                 Console.WriteLine(line);
                 int i = 0;
                 while (i != size - 2)
                 {
-                    Console.WriteLine(brush + new string(Font, size - 2) + Font + brush + Font);
+                    Console.WriteLine(this.Brush + new string(this.Font, size - 2) + this.Font + this.Brush + Font);
                     i++;
                 }
 
@@ -47,7 +46,7 @@ namespace Geometry
                     int c = count;
                     while (c-- != 0)
                     {
-                        Console.Write(Brush);
+                        Console.Write(this.Brush);
                     }
 
                     Console.WriteLine();
@@ -71,7 +70,7 @@ namespace Geometry
                 void Write(int xp, int yp)
                 {
                     Console.SetCursorPosition(xp, yp);
-                    Console.Write(Brush);
+                    Console.Write(this.Brush);
                 }
 
                 int centerX = size * 2, centerY = size, radius = size, x = -radius;
