@@ -9,23 +9,21 @@ namespace Geometry
             var drawing = new Geometry();
             int number;
 
-            Console.WriteLine("Press any key to start.");
-            while (int.TryParse(Console.ReadLine(), out number) != true)
+            do
             {
                 Console.Clear();
                 Console.WriteLine("Enter number of figure.");
                 Console.WriteLine("1. Square.");
                 Console.WriteLine("2. Triangle.");
-                Console.WriteLine("3. Circle.");
-            }
-
+            } while (int.TryParse(Console.ReadLine(), out number) != true);
+            
             int size;
-            Console.WriteLine("Okay, new enter size.");
-            while (int.TryParse(Console.ReadLine(), out size) != true)
+
+            do
             {
                 Console.Clear();
                 Console.WriteLine("Okay, new enter size.");
-            }
+            } while (int.TryParse(Console.ReadLine(), out size) != true);
 
             if (number == 1)
             {
@@ -34,10 +32,6 @@ namespace Geometry
             else if (number == 2)
             {
                 drawing.DrawTrangle(size);
-            }
-            else if (number == 3)
-            {
-                drawing.DrawCircle(size);
             }
             else
             {
