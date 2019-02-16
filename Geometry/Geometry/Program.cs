@@ -2,19 +2,31 @@
 
 namespace Geometry
 {
-    class Program
+    internal class Program
     {
-        static void Main()
+        private static void Main()
         {
-            int number, size;
             var drawing = new Geometry();
-            Console.WriteLine("Enter number of figure.");
-            Console.WriteLine("1. Square.");
-            Console.WriteLine("2. Triangle.");
-            Console.WriteLine("2. Square.");
-            number = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException("The value cannot be empty."));
+            int number;
+
+            Console.WriteLine("Press any key to start.");
+            while (int.TryParse(Console.ReadLine(), out number) != true)
+            {
+                Console.Clear();
+                Console.WriteLine("Enter number of figure.");
+                Console.WriteLine("1. Square.");
+                Console.WriteLine("2. Triangle.");
+                Console.WriteLine("2. Square.");
+            }
+
+            int size;
             Console.WriteLine("Okay, new enter size.");
-            size = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException("The value cannot be empty."));
+            while (int.TryParse(Console.ReadLine(), out size) != true)
+            {
+                Console.Clear();
+                Console.WriteLine("Okay, new enter size.");
+            }
+
             if (number == 1)
             {
                 drawing.DrawSquare(size);
@@ -29,6 +41,7 @@ namespace Geometry
             }
             else
             {
+                Console.Clear();
                 Console.WriteLine("Invalid number of figure.");
                 Console.ReadKey();
             }

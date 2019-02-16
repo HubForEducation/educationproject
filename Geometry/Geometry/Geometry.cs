@@ -10,9 +10,9 @@ namespace Geometry
         public void DrawSquare(int size)
         {
             Console.Clear();
-            if (size <= 0)
+            if (size < 1)
             {
-                throw new ArgumentOutOfRangeException("Only 1 and more!");
+                throw new ArgumentOutOfRangeException("Bad input params.");
             }
             else
             {
@@ -35,7 +35,7 @@ namespace Geometry
             Console.Clear();
             if (size < 1)
             {
-                Console.WriteLine("Only 1 and more!");
+                Console.WriteLine("Bad input params.");
                 Console.ReadKey();
             }
             else
@@ -62,7 +62,7 @@ namespace Geometry
             Console.Clear();
             if (size < 1)
             {
-                Console.WriteLine("Only 1 and more!");
+                Console.WriteLine("Bad input params.");
                 Console.ReadKey();
             }
             else
