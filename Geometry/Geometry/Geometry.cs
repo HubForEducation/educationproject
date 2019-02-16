@@ -21,7 +21,7 @@ namespace Geometry
                 var i = 0;
                 while (i != size - 2)
                 {
-                    Console.WriteLine(Brush + new string(this.Font, size - 2) + this.Font + this.Brush + Font);
+                    Console.WriteLine(Brush + new string(Font, size - 2) + Font + Brush + Font);
                     i++;
                 }
 
@@ -46,7 +46,7 @@ namespace Geometry
                     int c = count;
                     while (c-- != 0)
                     {
-                        Console.Write(this.Brush);
+                        Console.Write(Brush);
                     }
 
                     Console.WriteLine();
@@ -70,7 +70,7 @@ namespace Geometry
                 void Write(int xp, int yp)
                 {
                     Console.SetCursorPosition(xp, yp);
-                    Console.Write(this.Brush);
+                    Console.Write(Brush);
                 }
 
                 int centerX = size * 2, centerY = size, radius = size, x = -radius;
