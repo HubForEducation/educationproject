@@ -16,7 +16,7 @@ namespace Geometry
                 Console.WriteLine("Enter number of figure.");
                 Console.WriteLine("1. Square.");
                 Console.WriteLine("2. Triangle.");
-                Console.WriteLine("2. Square.");
+                Console.WriteLine("3. Circle.");
             }
 
             int size;
