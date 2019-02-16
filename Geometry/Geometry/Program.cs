@@ -21,7 +21,7 @@ namespace Geometry
             }
             else if (number == 2)
             {
-                drawing.DrawSquare(size);
+                drawing.DrawTrangle(size);
             }
             else if (number == 3)
             {
