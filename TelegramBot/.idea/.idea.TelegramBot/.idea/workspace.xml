@@ -10,7 +10,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TelegramBot/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
@@ -24,11 +24,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TelegramBot/BotEngine.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="48" column="38" lean-forward="true" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
+            <state relative-caret-position="381">
+              <caret line="50" column="8" lean-forward="true" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
               <folding>
                 <marker date="1550504355371" expanded="true" signature="6:113" ph="..." />
                 <marker date="1550504355371" expanded="true" signature="136:1376" ph="{...}" />
@@ -60,9 +60,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="403" />
-    <option name="y" value="70" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="420" />
+    <option name="y" value="82" />
     <option name="width" value="1399" />
     <option name="height" value="963" />
   </component>
@@ -149,12 +149,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550501083431</updated>
-      <workItem from="1550501084950" duration="3449000" />
+      <workItem from="1550501084950" duration="3757000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3449000" />
+    <option name="totallyTimeSpent" value="3757000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -166,7 +166,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="403" y="70" width="1399" height="963" extended-state="0" />
+    <frame x="420" y="82" width="1399" height="963" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Image Layers" />
@@ -214,10 +215,22 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/TelegramBot/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+          <folding>
+            <marker date="1550504176027" expanded="true" signature="36:274" ph="{...}" />
+            <marker date="1550504176027" expanded="true" signature="56:272" ph="{...}" />
+            <marker date="1550504176027" expanded="true" signature="102:266" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TelegramBot/BotEngine.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="48" column="38" lean-forward="true" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
+        <state relative-caret-position="381">
+          <caret line="50" column="8" lean-forward="true" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
           <folding>
             <marker date="1550504355371" expanded="true" signature="6:113" ph="..." />
             <marker date="1550504355371" expanded="true" signature="136:1376" ph="{...}" />
@@ -227,18 +240,6 @@
             <marker date="1550504355371" expanded="true" signature="667:842" ph="{...}" />
             <marker date="1550504355371" expanded="true" signature="726:806" ph="{...}" />
             <marker date="1550504355371" expanded="true" signature="889:1359" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TelegramBot/Program.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding>
-            <marker date="1550504176027" expanded="true" signature="36:274" ph="{...}" />
-            <marker date="1550504176027" expanded="true" signature="56:272" ph="{...}" />
-            <marker date="1550504176027" expanded="true" signature="102:266" ph="{...}" />
           </folding>
         </state>
       </provider>
