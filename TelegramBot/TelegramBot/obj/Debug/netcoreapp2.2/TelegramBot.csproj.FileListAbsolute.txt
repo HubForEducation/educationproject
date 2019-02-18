@@ -1,0 +1,11 @@
+D:\educationproject\TelegramBot\TelegramBot\bin\Debug\netcoreapp2.2\TelegramBot.deps.json
+D:\educationproject\TelegramBot\TelegramBot\bin\Debug\netcoreapp2.2\TelegramBot.runtimeconfig.json
+D:\educationproject\TelegramBot\TelegramBot\bin\Debug\netcoreapp2.2\TelegramBot.runtimeconfig.dev.json
+D:\educationproject\TelegramBot\TelegramBot\bin\Debug\netcoreapp2.2\TelegramBot.dll
+D:\educationproject\TelegramBot\TelegramBot\bin\Debug\netcoreapp2.2\TelegramBot.pdb
+D:\educationproject\TelegramBot\TelegramBot\obj\Debug\netcoreapp2.2\TelegramBot.csprojAssemblyReference.cache
+D:\educationproject\TelegramBot\TelegramBot\obj\Debug\netcoreapp2.2\TelegramBot.csproj.CoreCompileInputs.cache
+D:\educationproject\TelegramBot\TelegramBot\obj\Debug\netcoreapp2.2\TelegramBot.AssemblyInfoInputs.cache
+D:\educationproject\TelegramBot\TelegramBot\obj\Debug\netcoreapp2.2\TelegramBot.AssemblyInfo.cs
+D:\educationproject\TelegramBot\TelegramBot\obj\Debug\netcoreapp2.2\TelegramBot.dll
+D:\educationproject\TelegramBot\TelegramBot\obj\Debug\netcoreapp2.2\TelegramBot.pdb
