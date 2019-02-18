@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using System.Diagnostics;
+using System.Data;
 using System.Linq;
 using System.IO;
 using System.Net;
@@ -35,18 +35,6 @@ namespace TelegramBot
             }
 
             return true;
-        }
-
-        public string Command(string command)
-        {
-            ProcessStartInfo request = new ProcessStartInfo(@"cmd.exe", @"/C " + command);
-            request.WindowStyle = ProcessWindowStyle.Hidden;
-            request.RedirectStandardOutput = true;
-            request.UseShellExecute = false;
-            request.CreateNoWindow = true;
-            Process procCommand = Process.Start(request);
-            StreamReader answer = procCommand.StandardOutput;
-            return answer.ReadToEnd();
         }
         
     }
