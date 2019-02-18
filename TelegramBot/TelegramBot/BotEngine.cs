@@ -8,7 +8,7 @@ namespace TelegramBot
 {
     public class BotEngine
     {
-        public List<string> Get(string path)
+        public List<string> Get();
         {
             List<string> files = new List<string>();
 
@@ -27,7 +27,7 @@ namespace TelegramBot
             return fileText;
         }
 
-        public bool Download(string address, string path)
+        public bool Dowload(string address, string path)
         {
             using (var client = new WebClient())
             {

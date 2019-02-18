@@ -9,7 +9,6 @@ namespace TelegramBot
            BotEngine bot = new BotEngine();
            var answ = bot.Command("ipconfig /all");
            Console.WriteLine(answ);
-           
         }
     }
 }
