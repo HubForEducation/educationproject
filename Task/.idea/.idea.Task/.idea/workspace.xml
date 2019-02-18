@@ -27,10 +27,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Task/RomanNumerals.cs" />
-        <option value="$PROJECT_DIR$/Task/Program.cs" />
         <option value="$PROJECT_DIR$/Task/Action.cs" />
         <option value="$PROJECT_DIR$/Task.Tests/RomanNumeralsTests.cs" />
         <option value="$PROJECT_DIR$/Task.Tests/ActionTests.cs" />
+        <option value="$PROJECT_DIR$/Task/Program.cs" />
       </list>
     </option>
   </component>
@@ -41,8 +41,8 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="433" />
-    <option name="y" value="45" />
+    <option name="x" value="314" />
+    <option name="y" value="50" />
     <option name="width" value="1399" />
     <option name="height" value="952" />
   </component>
@@ -74,8 +74,8 @@
         </subPane>
         <option name="show-all-files" value="false" />
       </pane>
-      <pane id="FileSystemExplorer" />
       <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -134,11 +134,12 @@
       <workItem from="1549894255648" duration="4682000" />
       <workItem from="1550049707756" duration="1680000" />
       <workItem from="1550067332059" duration="23000" />
+      <workItem from="1550488372177" duration="7363000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11446000" />
+    <option name="totallyTimeSpent" value="18809000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -150,9 +151,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="433" y="45" width="1399" height="952" extended-state="0" />
+    <frame x="314" y="50" width="1399" height="952" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26512322" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26885736" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -160,12 +161,12 @@
       <window_info anchor="bottom" id="NuGet" order="0" weight="0.32844934" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.49925372" weight="0.32844934" />
-      <window_info active="true" anchor="bottom" id="Unit Tests" order="3" visible="true" weight="0.32844934" />
+      <window_info anchor="bottom" id="Unit Tests" order="3" weight="0.32844934" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.32844934" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50074625" side_tool="true" weight="0.32965687" />
       <window_info anchor="bottom" id="Database Changes" order="6" />
       <window_info anchor="bottom" id="Performance Profiler" order="7" weight="0.32965687" />
-      <window_info anchor="bottom" id="Build" order="8" weight="0.32844934" />
+      <window_info anchor="bottom" id="Build" order="8" weight="0.32722834" />
       <window_info anchor="bottom" id="Message" order="9" />
       <window_info anchor="bottom" id="Find" order="10" />
       <window_info anchor="bottom" id="Run" order="11" weight="0.32844934" />
@@ -180,7 +181,7 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="right" id="Errors In Solution" order="4" weight="0.32910448" />
       <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="right" id="Unit Tests Coverage" order="6" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="6" weight="0.32935026" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,18 +260,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Task/Program.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-          <folding>
-            <marker date="1549896228808" expanded="true" signature="29:125" ph="{...}" />
-            <marker date="1549896228808" expanded="true" signature="56:123" ph="{...}" />
-            <marker date="1549896228808" expanded="true" signature="97:117" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Task.Tests/ActionTests.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -292,6 +281,19 @@
             <marker date="1550050376605" expanded="true" signature="83:884" ph="{...}" />
             <marker date="1550050376605" expanded="true" signature="360:484" ph="{...}" />
             <marker date="1550050376605" expanded="true" signature="755:878" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Task/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding>
+            <marker date="1550501055871" expanded="true" signature="6:66" ph="..." />
+            <marker date="1550501055871" expanded="true" signature="82:186" ph="{...}" />
+            <marker date="1550501055871" expanded="true" signature="109:184" ph="{...}" />
+            <marker date="1550501055871" expanded="true" signature="149:178" ph="{...}" />
           </folding>
         </state>
       </provider>
