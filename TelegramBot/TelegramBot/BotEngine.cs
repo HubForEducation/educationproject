@@ -8,7 +8,11 @@ namespace TelegramBot
 {
     public class BotEngine
     {
+<<<<<<< HEAD
         public List<string> Get()
+=======
+        public List<string> Get(string path);
+>>>>>>> 1a0e197e645650ba6410323401e83c2680c5fdc0
         {
             List<string> files = new List<string>();
 
