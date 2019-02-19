@@ -11,6 +11,12 @@ namespace TelegramBot
            
            Thread CheckFilesThread = new Thread(new ThreadStart(CheckFiles));
            CheckFilesThread.Start();
+
+           while (true)
+           {
+               Console.WriteLine("Ha ha!");
+               Thread.Sleep(2000);
+           }
         }
 
         static void CheckFiles()
