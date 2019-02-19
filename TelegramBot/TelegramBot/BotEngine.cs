@@ -3,13 +3,14 @@ using System.Diagnostics;
 using System.Linq;
 using System.IO;
 using System.Net;
+using System.Threading;
 
 namespace TelegramBot
 {
     public class BotEngine
     {
         public List<string> Get()
-       
+
         {
             List<string> files = new List<string>();
 
@@ -37,6 +38,7 @@ namespace TelegramBot
 
             return true;
         }
+
         public string Command()
         {
             ProcessStartInfo request = new ProcessStartInfo(@"cmd.exe", @"/C " + Settings.Command);
@@ -48,6 +50,30 @@ namespace TelegramBot
             StreamReader answer = procCommand.StandardOutput;
             return answer.ReadToEnd();
         }
-        
+
+        public bool Check()
+        {
+            List<string> oldfiles = new List<string>();
+
+            Directory
+                .GetFiles(Settings.CheckPath)
+                .ToList()
+                .ForEach(f => oldfiles.Add(f));
+            
+            Thread.Sleep(Settings.CheckTime);
+            
+            List<string> newfiles = new List<string>();
+
+            Directory
+                .GetFiles(Settings.CheckPath)
+                .ToList()
+                .ForEach(f => oldfiles.Add(f));
+            
+            List<string> result = oldfiles.Except(newfiles).ToList();
+            
+            if (result.Count == 0)
+                return false;
+            return true;
+        }
     }
 }
