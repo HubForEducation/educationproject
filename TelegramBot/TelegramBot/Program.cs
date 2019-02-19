@@ -7,6 +7,7 @@ namespace TelegramBot
         static void Main()
         {
            BotEngine bot = new BotEngine();
+           bot.Get();
         }
     }
 }
