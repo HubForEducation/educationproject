@@ -18,13 +18,13 @@ namespace TelegramBot
 
         public static void Save()
         {
-            string[] filesource = new string[] {Get, Read, DowloadAdress, DowloadPath, Command};
+            string[] filesource = new string[] {Get, Read, DowloadAdress, DowloadPath, Command,CheckPath,CheckTime,SavePath,LoadPath};
             File.WriteAllLines(SavePath, filesource);
         }
 
         public static void Load()
         {
-            string[] filesource = new string[10];
+            string[] filesource = new string[88];
             filesource = File.ReadAllLines(LoadPath);
         }
     }
