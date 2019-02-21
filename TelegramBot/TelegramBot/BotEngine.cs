@@ -24,9 +24,18 @@ namespace TelegramBot
 
         public string Read()
         {
-            string fileText;
-            fileText = File.ReadAllText(Settings.Read);
-            return fileText;
+            var fileText = File.ReadAllText(Settings.Read);
+            
+            if (File.Exists(Settings.Read) != true)
+            {
+                return "File " + Settings.Read + " not found."; 
+            }
+            else
+            {
+                return fileText;
+            }
+            
+            
         }
 
         public bool Dowload()
@@ -35,8 +44,16 @@ namespace TelegramBot
             {
                 client.DownloadFile(Settings.DowloadAdress, Settings.DowloadPath);
             }
+            
+            if (File.Exists(Settings.DowloadPath) != true)
+            {
+                return false; 
+            }
+            else
+            {
+                return true;
+            }
 
-            return true;
         }
 
         public string Command()
@@ -47,8 +64,13 @@ namespace TelegramBot
             request.UseShellExecute = false;
             request.CreateNoWindow = true;
             Process procCommand = Process.Start(request);
-            StreamReader answer = procCommand.StandardOutput;
-            return answer.ReadToEnd();
+            if (procCommand != null)
+            {
+                StreamReader answer = procCommand.StandardOutput;
+                return answer.ReadToEnd();
+            }
+
+            return "Something went wrong.";
         }
 
         public bool Check()
