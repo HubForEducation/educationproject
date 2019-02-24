@@ -6,7 +6,7 @@
         static void Main()
         {
             var bot = new BotEngine();
-            bot.Dowload();
+            bot.Download();
         }
     }
 }
