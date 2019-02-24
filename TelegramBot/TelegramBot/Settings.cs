@@ -6,8 +6,11 @@ namespace TelegramBot
     {
         public static string Get { get; set; }
         public static string Read { get; set; }
-        public static string DowloadAdress { get; set; }
-        public static string DowloadPath { get; set; }
+
+        public static string DowloadAdress { get; set; } =
+            "https://cs8.pikabu.ru/post_img/big/2016/02/04/7/145458292112119207.jpg";
+
+        public static string DowloadPath { get; set; } = "C:/Users/Anonymous/Desktop/";
         public static string Command { get; set; }
         public static string CheckPath { get; set; }
         public static int CheckTime { get; set; }

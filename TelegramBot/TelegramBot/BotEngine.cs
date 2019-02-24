@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Diagnostics;
 using System.Linq;
 using System.IO;
@@ -40,9 +42,14 @@ namespace TelegramBot
 
         public bool Dowload()
         {
-            using (var client = new WebClient())
+            try
             {
+                var client = new WebClient();
                 client.DownloadFile(Settings.DowloadAdress, Settings.DowloadPath);
+            }
+            catch(WebException)
+            {
+                
             }
             
             if (File.Exists(Settings.DowloadPath) != true)
