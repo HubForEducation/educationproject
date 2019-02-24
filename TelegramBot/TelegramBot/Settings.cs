@@ -36,8 +36,7 @@ namespace TelegramBot
             }
             else
             {
-                string[] filesource = new string[88];
-                filesource = File.ReadAllLines(LoadPath);
+                var filesource = File.ReadAllLines(LoadPath);
                 Get = filesource[0];
                 Read = filesource[1];
                 DowloadAdress = filesource[2];
