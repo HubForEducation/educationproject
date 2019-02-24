@@ -1,7 +1,4 @@
-﻿using System;
-using System.Threading;
-
-namespace TelegramBot
+﻿namespace TelegramBot
 {
     class Program
     {
