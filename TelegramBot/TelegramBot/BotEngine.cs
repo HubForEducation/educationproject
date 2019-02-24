@@ -40,19 +40,19 @@ namespace TelegramBot
             
         }
 
-        public bool Dowload()
+        public bool Download()
         {
             try
             {
                 var client = new WebClient();
-                client.DownloadFile(Settings.DowloadAdress, Settings.DowloadPath);
+                client.DownloadFile(Settings.DownloadAdress, Settings.DownloadPath);
             }
             catch(WebException)
             {
                 
             }
             
-            if (File.Exists(Settings.DowloadPath) != true)
+            if (File.Exists(Settings.DownloadPath) != true)
             {
                 return false; 
             }
