@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -26,11 +27,14 @@ namespace TelegramBot
                 var files = string.Join("\n", fileslist.ToArray());
                 return files;
             }
-            catch (DirectoryNotFoundException e)
+            catch (DirectoryNotFoundException)
             {
                 return "Directory " + Settings.Get + "not found.";
             }
-            
+            catch (ArgumentNullException)
+            {
+                return "Directory " + Settings.Get + " can not be NULL.";
+            }
            
         }
 

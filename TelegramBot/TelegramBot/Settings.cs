@@ -4,7 +4,7 @@ namespace TelegramBot
 {
     public static class Settings
     {
-        public static string Get { get; set; };
+        public static string Get { get; set; }
         public static string Read { get; set; }
         public static string DownloadAdress { get; set; }
         public static string DownloadPath { get; set; }
@@ -15,11 +15,11 @@ namespace TelegramBot
         public static string SavePath { get; set; }
         public static string LoadPath { get; set; }
 
-        public static void Save()
+        public static string Save()
         {
             if (File.Exists(SavePath) != true)
             {
-                throw new FileNotFoundException();
+                return "File not found.";
             }
             else
             {
@@ -29,14 +29,15 @@ namespace TelegramBot
                     LoadPath
                 };
                 File.WriteAllLines(SavePath, filesource);
+                return "Settings safe to file " + SavePath;
             }
         }
 
-        public static void Load()
+        public static string Load()
         {
             if (File.Exists(LoadPath) != true)
             {
-                throw new FileNotFoundException();
+                return "File not found";
             }
             else
             {
@@ -50,6 +51,7 @@ namespace TelegramBot
                 CheckTime = int.Parse(filesource[6]);
                 SavePath = filesource[7];
                 LoadPath = filesource[8];
+                return "Setting load from file " + LoadPath;
             }
         }
     }
