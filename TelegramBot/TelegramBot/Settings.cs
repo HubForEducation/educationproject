@@ -9,7 +9,7 @@ namespace TelegramBot
         public static string DownloadAdress { get; set; }
         public static string DownloadPath { get; set; }
         public static string Command { get; set; }
-        public static string CheckPath { get; set; }
+        public static string CheckPath { get; set; } = "C:/Users/Anonymous/Desktop";
         public static int CheckTime { get; set; }
 
         public static string SavePath { get; set; }

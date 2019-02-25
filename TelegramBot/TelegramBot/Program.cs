@@ -2,6 +2,7 @@
 using System.Threading;
 using Telegram.Bot;
 using Telegram.Bot.Args;
+using Telegram.Bot.Types;
 
 namespace TelegramBot
 {
@@ -15,8 +16,9 @@ namespace TelegramBot
             Thread menuThread = new Thread(Menu);
             menuThread.Start();
 
-            _botClient = new TelegramBotClient("GIVE_ME_YOUR_STUPID_TOKEN_RICK");
+            _botClient = new TelegramBotClient("754861830:AAE98RFY3OILvgThAG7RR_livVSHbnJp5Wc");
             _botClient.OnMessage += Bot_Commands;
+
             _botClient.StartReceiving();
             Thread.Sleep(int.MaxValue);
             Console.WriteLine("EducationTelegramBot.");
@@ -65,6 +67,7 @@ namespace TelegramBot
 
         static async void Bot_Commands(object sender, MessageEventArgs e)
         {
+
             if (e.Message.Text == "/get")
             {
                 var files = BotEngine.Get();
