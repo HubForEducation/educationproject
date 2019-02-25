@@ -4,13 +4,10 @@ namespace TelegramBot
 {
     public static class Settings
     {
-        public static string Get { get; set; }
+        public static string Get { get; set; };
         public static string Read { get; set; }
-
-        public static string DownloadAdress { get; set; } =
-            "https://cs8.pikabu.ru/post_img/big/2016/02/04/7/145458292112119207.jpg";
-
-        public static string DownloadPath { get; set; } = "C:/Users/Anonymous/Desktop/";
+        public static string DownloadAdress { get; set; }
+        public static string DownloadPath { get; set; }
         public static string Command { get; set; }
         public static string CheckPath { get; set; }
         public static int CheckTime { get; set; }
@@ -26,7 +23,11 @@ namespace TelegramBot
             }
             else
             {
-                string[] filesource = { Get, Read, DownloadAdress, DownloadPath, Command, CheckPath, CheckTime.ToString(), SavePath, LoadPath };
+                string[] filesource =
+                {
+                    Get, Read, DownloadAdress, DownloadPath, Command, CheckPath, CheckTime.ToString(), SavePath,
+                    LoadPath
+                };
                 File.WriteAllLines(SavePath, filesource);
             }
         }
