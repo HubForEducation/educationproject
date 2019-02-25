@@ -12,7 +12,7 @@ namespace TelegramBot
 
         static void Main()
         {
-            Thread menuThread = new Thread(new ThreadStart(Menu));
+            Thread menuThread = new Thread(Menu);
             menuThread.Start();
 
             _botClient = new TelegramBotClient("754861830:AAE98RFY3OILvgThAG7RR_livVSHbnJp5Wc");
