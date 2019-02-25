@@ -103,6 +103,13 @@ namespace TelegramBot
                     text: commandanswer
                 );
             }
+            else
+            {
+                await _botClient.SendTextMessageAsync(
+                    chatId: e.Message.Chat,
+                    text: "Command not found."
+                );
+            }
         }
     }
 }
