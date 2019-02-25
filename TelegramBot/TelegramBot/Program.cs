@@ -15,7 +15,7 @@ namespace TelegramBot
             Thread menuThread = new Thread(Menu);
             menuThread.Start();
 
-            _botClient = new TelegramBotClient("754861830:AAE98RFY3OILvgThAG7RR_livVSHbnJp5Wc");
+            _botClient = new TelegramBotClient("GIVE_ME_YOUR_STUPID_TOKEN_RICK");
             _botClient.OnMessage += Bot_Commands;
             _botClient.StartReceiving();
             Thread.Sleep(int.MaxValue);
