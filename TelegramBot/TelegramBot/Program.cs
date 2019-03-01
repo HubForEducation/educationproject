@@ -10,12 +10,11 @@ namespace TelegramBot
     {
         static ITelegramBotClient _botClient;
         static readonly BotEngine BotEngine = new BotEngine();
-
+        private static Settings _settings { get; set; }
+        
         static void Main()
         {
-            Thread menuThread = new Thread(Menu);
-            menuThread.Start();
-
+            _settings = Settings.Load();
             _botClient = new TelegramBotClient("754861830:AAE98RFY3OILvgThAG7RR_livVSHbnJp5Wc");
             _botClient.OnMessage += Bot_Commands;
 
@@ -27,11 +26,10 @@ namespace TelegramBot
 
         public static int Keypressed;
 
-        public static void Menu()
+        public void Menu()
         {
             do
             {
-                Console.Clear();
                 Console.WriteLine("TelegramEducationBot.");
                 Console.WriteLine("1. Save settings.");
                 Console.WriteLine("2. Load Settings.");
@@ -41,26 +39,25 @@ namespace TelegramBot
                 {
                     Console.WriteLine("Only number.");
                     Console.ReadKey();
+                    continue;
+                }
+                
+                if (Keypressed == 1)
+                {
+                    Console.Write(Settings.Save());
+                }
+                else if (Keypressed == 2)
+                {
+                    Settings.Load();
+                    Console.WriteLine(Settings.Load());
+                }
+                else if (Keypressed == 3)
+                {
+                    Environment.Exit(0);
                 }
                 else
                 {
-                    if (Keypressed == 1)
-                    {
-                        Console.Write(Settings.Save());
-                    }
-                    else if (Keypressed == 2)
-                    {
-                        Settings.Load();
-                        Console.WriteLine(Settings.Load());
-                    }
-                    else if (Keypressed == 3)
-                    {
-                        Environment.Exit(0);
-                    }
-                    else
-                    {
-                        Console.WriteLine("Wrong number.");
-                    }
+                    Console.WriteLine("Wrong number.");
                 }
             } while (Keypressed != 3);
         }

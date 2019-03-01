@@ -11,12 +11,10 @@ namespace TelegramBot
     public class BotEngine
     {
         public string Get()
-
         {
             try
             {
                 List<string> fileslist = new List<string>();
-
 
                 Directory
                     .EnumerateFiles(Settings.Get, "*")
@@ -34,8 +32,7 @@ namespace TelegramBot
             catch (ArgumentNullException)
             {
                 return "Directory " + Settings.Get + " can not be NULL.";
-            }
-           
+            }           
         }
 
         public string Read()
