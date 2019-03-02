@@ -15,12 +15,11 @@ namespace TelegramBot
         static ITelegramBotClient _botClient;
         static readonly BotEngine BotEngine = new BotEngine();
         static Settings _settings = new Settings();
-        static string apiToken = "754861830:AAE98RFY3OILvgThAG7RR_livVSHbnJp5Wc";
-        private static string chatID = "721567903";
+        public static string apiToken = _settings.apiToken;
+        public static string chatID = _settings.chatID;
 
         static void Main()
         {
-            _settings.CheckPath = "C:/";
             Thread menuThread = new Thread(Menu);
             menuThread.Start();
 
@@ -66,7 +65,7 @@ namespace TelegramBot
                 }
 
                 BotEngine.Checkedstring = null;
-                Thread.Sleep(8000);
+                Thread.Sleep(_settings.CheckTime);
             }
             
         }

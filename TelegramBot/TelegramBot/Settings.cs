@@ -8,12 +8,15 @@ namespace TelegramBot
     [Serializable]
     public class Settings
     {
+        public string apiToken = "754861830:AAE98RFY3OILvgThAG7RR_livVSHbnJp5Wc";
+        public string chatID = "721567903";
         public string Get;
         public string Read;
         public string DownloadAdress;
         public string DownloadPath;
         public string Command;
-        public string CheckPath;
+        public string CheckPath = "C:/";
+        public int CheckTime;
         public string SaveLoadSettingsPath;
 
         public async Task Save(Settings settings)
