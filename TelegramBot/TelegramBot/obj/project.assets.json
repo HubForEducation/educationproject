@@ -1318,7 +1318,7 @@
       ]
     },
     "Microsoft.NETCore.DotNetAppHost/2.2.0": {
-      "sha512": "OK/H8p9Ig6mLMITjXJ4VOewrJg/TU+dAPHE4BdMWMv+8COzBehf7XF1+DofKkmqdHpO2cJoS5Sc9PEZ6PKCbsg==",
+      "sha512": "qIrVLupwT2NYTrf7KM7Nh+mJr36V5MITVRjyGOByVVCwGmQgQmI/6bjZYQv+QdExi4Cm87eCKJX9FdT6nc00Xg==",
       "type": "package",
       "path": "microsoft.netcore.dotnetapphost/2.2.0",
       "files": [
@@ -1521,7 +1521,7 @@
       ]
     },
     "Newtonsoft.Json/12.0.1": {
-      "sha512": "jmVyoEyk0In8r+AObYQyFKVFm7uSRzE0XSHSbEtBJcZDMV6DqJoyB4FLcHwprPVhAh826so0db3DIKXVnpGoPA==",
+      "sha512": "pBR3wCgYWZGiaZDYP+HHYnalVnPJlpP1q55qvVb+adrDHmFMDc1NAKio61xTwftK3Pw5h7TZJPJEEVMd6ty8rg==",
       "type": "package",
       "path": "newtonsoft.json/12.0.1",
       "files": [
@@ -1560,7 +1560,7 @@
       ]
     },
     "OpenSSL.PrivateKeyDecoder/1.2.0": {
-      "sha512": "7UQh1c16HlHqJSSXNyXAAWxyszK+bbAZxmZ6qrP/T16bCYW17mLXpfHutwpruttR7o9VhjHz2cQHeZ0l7V2xkw==",
+      "sha512": "2+NGfjqjpIyXEVtsEg5ML7E6bzPGiw6RtH0a7rUhtAEBWWo/d/7uI/TKtHW+/EPO4E/0Gpz4ozG2ETqOAhpmVw==",
       "type": "package",
       "path": "openssl.privatekeydecoder/1.2.0",
       "files": [
@@ -1581,7 +1581,7 @@
       ]
     },
     "OpenSSL.X509Certificate2.Provider/1.2.0": {
-      "sha512": "MqAys1Gy2EuuUvdtIg7nPDGq89zaiBF0CYKsK2oYl+7e0vL0ZKFR5lFKIddpgEGg2qZ5U55PCr/mrYC0ZXKecw==",
+      "sha512": "mXoKvCxJHgzIIxvC3VQ1QZC4KeyLUDuxIVD2DAzEJG7aLOC+zvlE0QsNG1tNbp/1eoI0u0RHnM8UL/y88vdiRQ==",
       "type": "package",
       "path": "openssl.x509certificate2.provider/1.2.0",
       "files": [
@@ -1602,7 +1602,7 @@
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "ZJbyxj5gWzOfnJTXGn9LH8ZK9t/PGFUVlsgv/dZUFy/ruE+eScVrAkaBTwf58FJ3F84cBMBOIm4QscRTtfxgqg==",
+      "sha512": "HdSSp5MnJSsg08KMfZThpuLPJpPwE5hBXvHwoKWosyHHfe8Mh5WKT0ylEOf6yNzX6Ngjxe4Whkafh5q7Ymac4Q==",
       "type": "package",
       "path": "runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "files": [
@@ -1615,7 +1615,7 @@
       ]
     },
     "runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "NCGzArSeAPBQJrBY2TUzb/19o3E3TgDFYyl+r+8zWuExcqJDBz5aGkEW8SwwqdscRc37IdtwTr2D2duW47CmHg==",
+      "sha512": "+yH1a49wJMy8Zt4yx5RhJrxO/DBDByAiCzNwiETI+1S4mPdCu0OY4djdciC7Vssk0l22wQaDLrXxXkp+3+7bVA==",
       "type": "package",
       "path": "runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "files": [
@@ -1654,7 +1654,7 @@
       ]
     },
     "runtime.native.System.Net.Http/4.3.0": {
-      "sha512": "ZVuZJqnnegJhd2k/PtAbbIcZ3aZeITq3sj06oKfMBSfphW3HDmk/t4ObvbOk/JA/swGR0LNqMksAh/f7gpTROg==",
+      "sha512": "guqHgQOK2eUgtJae2VKjNawBn1xjC0hfOt5wASHa60XHbIdCsQlqtvMsFG+3hy7yp88V+gi9fZCjubuDkeakcQ==",
       "type": "package",
       "path": "runtime.native.system.net.http/4.3.0",
       "files": [
@@ -1667,7 +1667,7 @@
       ]
     },
     "runtime.native.System.Security.Cryptography.Apple/4.3.0": {
-      "sha512": "jwjwlEL0Elv6gwoyaokRn12nv/JE+UW/DXJEbzhjCPvGbef36StnHKc9XaZD/rGWqYicrphZ7eumR/jdmNcjRg==",
+      "sha512": "DloMk88juo0OuOWr56QG7MNchmafTLYWvABy36izkrLI5VledI0rq28KGs1i9wbpeT9NPQrx/wTf8U2vazqQ3Q==",
       "type": "package",
       "path": "runtime.native.system.security.cryptography.apple/4.3.0",
       "files": [
@@ -1732,7 +1732,7 @@
       ]
     },
     "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "X7IdhILzr4ROXd8mI1BUCQMSHSQwelUlBjF1JyTKCjXaOGn2fB4EKBxQbCK2VjO3WaWIdlXZL3W6TiIVnrhX4g==",
+      "sha512": "/p8IQT2brFMDa7BHMH71LV+w5Tb3OxoLHxhn6+MGqN5xeqhM2HRHmj+7xQGJnaRn73d7ZTvp6yRCFMvolws4wA==",
       "type": "package",
       "path": "runtime.osx.10.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "files": [
@@ -1784,7 +1784,7 @@
       ]
     },
     "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "1uVTITQP8/cI6YoO6FqfW1pzP0k2TnDZ3TFD88Bu/9H7ZuTsMY9xmadbGpwPu8w8swcd1ifZJsjD9hF9O6C/tg==",
+      "sha512": "VB5cn/7OzUfzdnC8tqAIMQciVLiq2epm2NrAm1E9OjNRyG4lVhfR61SMcLizejzQP8R8Uf/0l5qOIbUEi+RdEg==",
       "type": "package",
       "path": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "files": [
@@ -2477,7 +2477,7 @@
       ]
     },
     "System.Net.Http/4.3.0": {
-      "sha512": "Z1UfSF6dlpCdZdxh6LeoGlYH+q6ptG/iiIWgUUeKhE3DbQACmZkU7Sz2nOX0qdHjz72MOdYRbkSJ5Qwl6sZgvg==",
+      "sha512": "6BBc6BUa7pWFL7KUI/c8wb18IobTZHTtcQKksxJI5F9DRDShdtOvBEJzg5jJbFdTll7gRE+5yXUlq72ciLE+QQ==",
       "type": "package",
       "path": "system.net.http/4.3.0",
       "files": [
@@ -2637,7 +2637,7 @@
       ]
     },
     "System.Net.Requests/4.3.0": {
-      "sha512": "8A5Yu2B68jLbGmomlBmCNGqrXBgNp5Y4lTorNdqzAm6s0UMgZDZ/Yxpnkjy6e0ZB0rP++HaL/R3P/kx5xsdmKQ==",
+      "sha512": "OZNUuAs0kDXUzm7U5NZ1ojVta5YFZmgT2yxBqsQ7Eseq5Ahz88LInGRuNLJ/NP2F8W1q7tse1pKDthj3reF5QA==",
       "type": "package",
       "path": "system.net.requests/4.3.0",
       "files": [
@@ -2720,7 +2720,7 @@
       ]
     },
     "System.Net.WebHeaderCollection/4.3.0": {
-      "sha512": "/aQLXlO/M2SjvKjMyX15IRHK/BJgb4qE1FZGZPjnFxhE7jHwduu65TMuVsyKxUOhYQg/2cr9zpm0olhD1icjTw==",
+      "sha512": "XZrXYG3c7QV/GpWeoaRC02rM6LH2JJetfVYskf35wdC/w2fFDFMphec4gmVH2dkll6abtW14u9Rt96pxd9YH2A==",
       "type": "package",
       "path": "system.net.webheadercollection/4.3.0",
       "files": [
@@ -3747,7 +3747,7 @@
       ]
     },
     "Telegram.Api/1.0.7": {
-      "sha512": "v+yVlzi1YN+UW9XqQ325cdR5I0IEUkMDFS/O8rwl5Ole38JwJOELdPCsChvTtSwsDMCWW34loL0RX79NaPMyHw==",
+      "sha512": "0MMafkxM2Ij0/s7OMuuZ4pAn9Vg3FSbNy3vQWJ6JEwwT6heM2Wl033xDz5mBkBXsNbvFFT4zmH91VJq0Sq5QDw==",
       "type": "package",
       "path": "telegram.api/1.0.7",
       "files": [
@@ -3759,7 +3759,7 @@
       ]
     },
     "Telegram.Bot/14.10.0": {
-      "sha512": "AQTaLrJE9nkOw0EissXU1QmcMvSJZZ+MBX2Bm4N/lErr+oAwFPrcmatiwHQmJQ1IKkeftKs8ykjTjVC8N5HXeQ==",
+      "sha512": "n/D0emF/XpOrXofQ22lZTXuuRTXGWTRZ5Ktfco5RpB9OA7x++iQTTRWiY+FqO9iUL2Y1uwROtZl8omfLfNOyAw==",
       "type": "package",
       "path": "telegram.bot/14.10.0",
       "files": [
@@ -3783,28 +3783,30 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\yar\\.nuget\\packages\\": {},
+    "C:\\Users\\Anonymous\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\educationproject\\TelegramBot\\TelegramBot\\TelegramBot.csproj",
+      "projectUniqueName": "C:\\Users\\Anonymous\\Desktop\\HubForEducation\\educationproject\\TelegramBot\\TelegramBot\\TelegramBot.csproj",
       "projectName": "TelegramBot",
-      "projectPath": "D:\\educationproject\\TelegramBot\\TelegramBot\\TelegramBot.csproj",
-      "packagesPath": "C:\\Users\\yar\\.nuget\\packages\\",
-      "outputPath": "D:\\educationproject\\TelegramBot\\TelegramBot\\obj\\",
+      "projectPath": "C:\\Users\\Anonymous\\Desktop\\HubForEducation\\educationproject\\TelegramBot\\TelegramBot\\TelegramBot.csproj",
+      "packagesPath": "C:\\Users\\Anonymous\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Anonymous\\Desktop\\HubForEducation\\educationproject\\TelegramBot\\TelegramBot\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\yar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Anonymous\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3853,7 +3855,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Telegram.Api 1.0.7' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.2'. This package may not be fully compatible with your project.",
+      "message": "Пакет \"Telegram.Api 1.0.7\" был восстановлен с помощью \".NETFramework,Version=v4.6.1\", а не целевой платформы проекта \".NETCoreApp,Version=v2.2\". Этот пакет может быть не полностью совместим с вашим проектом.",
       "libraryId": "Telegram.Api",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.2"

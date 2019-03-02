@@ -8,11 +8,11 @@ namespace TelegramBot
     public class Settings
     {
         public string Get { get; set; }
-        public string Read { get; set; }
+        public static string Read { get; set; }
         public string DownloadAdress { get; set; }
         public string DownloadPath { get; set; }
         public string Command { get; set; }
-        public string CheckPath { get; set; } = "C:/Users/Anonymous/Desktop";
+        public string CheckPath { get; set; }
         public int CheckTime { get; set; }
         public string SavePath { get; set; }
         public string LoadPath { get; set; } 
@@ -28,7 +28,6 @@ namespace TelegramBot
 
         public static async Task<Settings> Load()
         {
-            Settings _setting = null;
             if (File.Exists("./settings.json") != true)
             {
                 throw new FileNotFoundException("./settings.json");
@@ -36,10 +35,10 @@ namespace TelegramBot
 
             var text = File.ReadAllText("./settings.json");
 
-            _setting = JsonConvert.DeserializeObject<Settings>(text);
+            var setting = JsonConvert.DeserializeObject<Settings>(text);
 
             Console.WriteLine("Setting load from file " + "./settings.json");
-            return _setting;
+            return setting;
         }
     }
 }

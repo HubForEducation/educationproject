@@ -14,7 +14,6 @@ namespace TelegramBot
         
         static void Main()
         {
-            _settings = Settings.Load();
             _botClient = new TelegramBotClient("754861830:AAE98RFY3OILvgThAG7RR_livVSHbnJp5Wc");
             _botClient.OnMessage += Bot_Commands;
 
@@ -44,7 +43,7 @@ namespace TelegramBot
                 
                 if (Keypressed == 1)
                 {
-                    Console.Write(Settings.Save());
+
                 }
                 else if (Keypressed == 2)
                 {

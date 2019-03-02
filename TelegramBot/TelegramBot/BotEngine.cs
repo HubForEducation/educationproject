@@ -10,14 +10,14 @@ namespace TelegramBot
 {
     public class BotEngine
     {
-        public string Get()
+        public string Get(string get)
         {
             try
             {
                 List<string> fileslist = new List<string>();
 
                 Directory
-                    .EnumerateFiles(Settings.Get, "*")
+                    .EnumerateFiles(get, "*")
                     .Select(Path.GetFileName)
                     .ToList()
                     .ForEach(f => fileslist.Add(f));
@@ -27,21 +27,21 @@ namespace TelegramBot
             }
             catch (DirectoryNotFoundException)
             {
-                return "Directory " + Settings.Get + "not found.";
+                return "Directory " + get + "not found.";
             }
             catch (ArgumentNullException)
             {
-                return "Directory " + Settings.Get + " can not be NULL.";
+                return "Directory " + get + " can not be NULL.";
             }           
         }
 
-        public string Read()
+        public string Read(string read)
         {
-            var fileText = File.ReadAllText(Settings.Read);
+            var fileText = File.ReadAllText(read);
 
-            if (File.Exists(Settings.Read) != true)
+            if (File.Exists(read) != true)
             {
-                return "File " + Settings.Read + " not found.";
+                return "File " + read + " not found.";
             }
             else
             {
@@ -49,33 +49,33 @@ namespace TelegramBot
             }
         }
 
-        public string Download()
+        public string Download(string downloadAdress, string downloadPath)
         {
             try
             {
                 var client = new WebClient();
-                client.DownloadFile(Settings.DownloadAdress, Settings.DownloadPath);
+                client.DownloadFile(downloadAdress, downloadPath);
             }
             catch (WebException)
             {
                 return "WebException";
             }
 
-            if (File.Exists(Settings.DownloadPath) != true)
+            if (File.Exists(downloadPath) != true)
             {
-                return "File from " + Settings.DownloadAdress + "to " + Settings.DownloadPath +
+                return "File from " + downloadAdress + "to " + downloadPath +
                        " not downloaded.";
             }
             else
             {
-                return "File from " + Settings.DownloadAdress + "to " + Settings.DownloadPath +
+                return "File from " + downloadAdress + "to " + downloadPath +
                        " downloaded successfully.";
             }
         }
 
-        public string Command()
+        public string Command(string command)
         {
-            ProcessStartInfo request = new ProcessStartInfo(@"cmd.exe", @"/C " + Settings.Command);
+            ProcessStartInfo request = new ProcessStartInfo(@"cmd.exe", @"/C " + command);
             request.WindowStyle = ProcessWindowStyle.Hidden;
             request.RedirectStandardOutput = true;
             request.UseShellExecute = false;
@@ -90,21 +90,21 @@ namespace TelegramBot
             return "Something went wrong.";
         }
 
-        public string Check()
+        public string Check(string checkPath, int checkTime)
         {
             List<string> oldfiles = new List<string>();
 
             Directory
-                .GetFiles(Settings.CheckPath)
+                .GetFiles(checkPath)
                 .ToList()
                 .ForEach(f => oldfiles.Add(f));
 
-            Thread.Sleep(Settings.CheckTime);
+            Thread.Sleep(checkTime);
 
             List<string> newfiles = new List<string>();
 
             Directory
-                .GetFiles(Settings.CheckPath)
+                .GetFiles(checkPath)
                 .ToList()
                 .ForEach(f => newfiles.Add(f));
 
