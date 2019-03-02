@@ -15,7 +15,7 @@ namespace TelegramBot
         public string DownloadAdress;
         public string DownloadPath;
         public string Command;
-        public string CheckPath = "C:/";
+        public string CheckPath;
         public int CheckTime;
         public string SaveLoadSettingsPath;
 
