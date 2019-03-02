@@ -5,6 +5,8 @@ using System.Linq;
 using System.IO;
 using System.Net;
 using System.Threading;
+using Telegram.Bot;
+using Telegram.Bot.Args;
 
 namespace TelegramBot
 {
@@ -90,36 +92,36 @@ namespace TelegramBot
             return "Something went wrong.";
         }
 
-        public string Check(string checkPath, int checkTime)
+        public void Check(string check)
         {
-            List<string> oldfiles = new List<string>();
 
-            Directory
-                .GetFiles(checkPath)
-                .ToList()
-                .ForEach(f => oldfiles.Add(f));
+            FileSystemWatcher watcher = new FileSystemWatcher();
+            watcher.Path = check;
 
-            Thread.Sleep(checkTime);
 
-            List<string> newfiles = new List<string>();
+            watcher.NotifyFilter = NotifyFilters.LastAccess | NotifyFilters.LastWrite
+                                                            | NotifyFilters.FileName | NotifyFilters.DirectoryName;
 
-            Directory
-                .GetFiles(checkPath)
-                .ToList()
-                .ForEach(f => newfiles.Add(f));
+            watcher.Changed += CheckOnChanged;
+            watcher.Created += CheckOnChanged;
+            watcher.Deleted += CheckOnChanged;
 
-            List<string> result = oldfiles.Except(newfiles).ToList();
+            watcher.EnableRaisingEvents = true;
 
-            var addededfiles = string.Join("\n", result.ToArray());
-
-            if (addededfiles == null)
-            {
-                return null;
-            }
-            else
-            {
-                return addededfiles;
-            }
         }
+
+        public static string Checkedstring { get; set; }
+
+        private static void CheckOnChanged(object source, FileSystemEventArgs e)
+        {
+            Checkedstring = "File: " + e.FullPath + " " + e.ChangeType;
+            Checked(Checkedstring);
+        }
+
+        public static string Checked(string checkedstring)
+        {
+            return checkedstring;
+        }
+
     }
 }
