@@ -11,8 +11,8 @@ namespace TelegramBot
         public string ApiToken = "754861830:AAE98RFY3OILvgThAG7RR_livVSHbnJp5Wc";
         public string ChatId = "721567903";
         public string Get = "./";
-        public string Read = "./read.txt";
-        public string DownloadAdress = "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png";
+        public string Read = "./";
+        public string DownloadAdress = "./";
         public string DownloadPath = "./";
         public string Command = "ipconfig";
         public string CheckPath;

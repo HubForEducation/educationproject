@@ -107,5 +107,78 @@ namespace TelegramBot
                 }
             } while (Keypressed != 3);
         }
+<<<<<<< HEAD
+=======
+
+        static async void Bot_Commands(object sender, MessageEventArgs e)
+        {
+            if (e.Message.Text == "/get")
+            {
+                var files = BotEngine.Get(_settings.Get);
+                await _botClient.SendTextMessageAsync(
+                    chatId: e.Message.Chat,
+                    text: files
+                );
+            }
+
+            else if (e.Message.Text == "/read")
+            {
+                var file = BotEngine.Read(_settings.Read);
+
+                await _botClient.SendTextMessageAsync(
+                    chatId: e.Message.Chat,
+                    text: file
+                );
+            }
+
+            else if (e.Message.Text == "/download")
+            {
+                BotEngine.Download(_settings.DownloadAdress, _settings.DownloadPath);
+                await _botClient.SendTextMessageAsync(
+                    chatId: e.Message.Chat,
+                    text: "File from " + _settings.DownloadAdress + "to " + _settings.DownloadPath +
+                          " downloaded successfully."
+                );
+            }
+
+            else if (e.Message.Text == "/command")
+            {
+                var commandanswer = BotEngine.Command(_settings.Command);
+
+                await _botClient.SendTextMessageAsync(
+                    chatId: e.Message.Chat,
+                    text: commandanswer
+                );
+            }
+            else if (e.Message.Text == "/check")
+            {
+                BotEngine.Check(_settings.CheckPath);
+                string checkedanswer = BotEngine.Checked(BotEngine.Checkedstring);
+                if (checkedanswer != null)
+                {
+                    await _botClient.SendTextMessageAsync(
+                        chatId: e.Message.Chat,
+                        text: checkedanswer
+                    );
+                }
+                else
+                {
+                    await _botClient.SendTextMessageAsync(
+                        chatId: e.Message.Chat,
+                        text: "No changes."
+                    );
+                }
+
+                BotEngine.Checkedstring = null;
+            }
+            else
+            {
+                await _botClient.SendTextMessageAsync(
+                    chatId: e.Message.Chat,
+                    text: "Command not found."
+                );
+            }
+        }
+>>>>>>> parent of 8d7219f... Big bug fixes.
     }
 }
