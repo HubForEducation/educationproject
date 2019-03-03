@@ -193,15 +193,6 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.NetFX20/1.0.3": {
-        "type": "package",
-        "compile": {
-          "lib/net20/mscorlib.dll": {}
-        },
-        "runtime": {
-          "lib/net20/mscorlib.dll": {}
-        }
-      },
       "NETStandard.Library/2.0.3": {
         "type": "package",
         "dependencies": {
@@ -1399,18 +1390,6 @@
         "runtime.json",
         "useSharedDesignerContext.txt",
         "version.txt"
-      ]
-    },
-    "Microsoft.NetFX20/1.0.3": {
-      "sha512": "7hPxu4q65ap1yiAuniskpMIJyTwviBIRItCYXozm/6Ikt03Uw3NNQNNzf7mjOEYYi9CG9VIv1KYwBGEa3FWAcg==",
-      "type": "package",
-      "path": "microsoft.netfx20/1.0.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net20/mscorlib.dll",
-        "microsoft.netfx20.1.0.3.nupkg.sha512",
-        "microsoft.netfx20.nuspec"
       ]
     },
     "NETStandard.Library/2.0.3": {
@@ -3798,7 +3777,6 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "Microsoft.NETCore.App >= 2.2.0",
-      "Microsoft.NetFX20 >= 1.0.3",
       "Newtonsoft.Json >= 12.0.1",
       "Telegram.Api >= 1.0.7",
       "Telegram.Bot >= 14.10.0"
@@ -3851,10 +3829,6 @@
             "version": "[2.2.0, )",
             "autoReferenced": true
           },
-          "Microsoft.NetFX20": {
-            "target": "Package",
-            "version": "[1.0.3, )"
-          },
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[12.0.1, )"
@@ -3877,16 +3851,6 @@
     }
   },
   "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Пакет \"Microsoft.NetFX20 1.0.3\" был восстановлен с помощью \".NETFramework,Version=v4.6.1\", а не целевой платформы проекта \".NETCoreApp,Version=v2.2\". Этот пакет может быть не полностью совместим с вашим проектом.",
-      "libraryId": "Microsoft.NetFX20",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.2"
-      ]
-    },
     {
       "code": "NU1701",
       "level": "Warning",

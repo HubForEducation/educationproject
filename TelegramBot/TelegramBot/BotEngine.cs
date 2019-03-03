@@ -36,15 +36,15 @@ namespace TelegramBot
 
         public string Read(string read)
         {
-            var fileText = File.ReadAllText(read);
-
-            if (File.Exists(read) != true)
+            string fileText;
+            try
+            {
+                fileText = File.ReadAllText(read);
+                return fileText;
+            }
+            catch (DirectoryNotFoundException)
             {
                 return "File " + read + " not found.";
-            }
-            else
-            {
-                return fileText;
             }
         }
 
@@ -52,24 +52,26 @@ namespace TelegramBot
         {
             try
             {
+                Random pictureseed = new Random();
                 var client = new WebClient();
-                client.DownloadFile(downloadAdress, downloadPath);
+                client.DownloadFile(downloadAdress, downloadPath + "botpicture" + pictureseed.Next() + ".png");
+                return "File from " + downloadAdress + " to " + downloadPath +
+                       " downloaded successfully.";
             }
             catch (WebException)
             {
-                return "WebException";
+                return "File link " + downloadAdress + " is incorrect, or file in" + downloadPath + "can not be created.";
+            }
+            catch (DirectoryNotFoundException)
+            {
+                return "File from " + downloadAdress + " to " + downloadPath +
+                       " not downloaded. Directory nor found.";
+            }
+            catch (ArgumentNullException)
+            {
+                return "File link is null.";
             }
 
-            if (File.Exists(downloadPath) != true)
-            {
-                return "File from " + downloadAdress + "to " + downloadPath +
-                       " not downloaded.";
-            }
-            else
-            {
-                return "File from " + downloadAdress + "to " + downloadPath +
-                       " downloaded successfully.";
-            }
         }
 
         public string Command(string command)

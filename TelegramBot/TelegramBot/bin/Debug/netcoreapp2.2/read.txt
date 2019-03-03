@@ -1,0 +1,1 @@
+Hi, its test read file for telegram bot!

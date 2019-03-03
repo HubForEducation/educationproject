@@ -131,11 +131,10 @@ namespace TelegramBot
 
             else if (e.Message.Text == "/download")
             {
-                BotEngine.Download(_settings.DownloadAdress, _settings.DownloadPath);
+                var downloadmessage = BotEngine.Download(_settings.DownloadAdress, _settings.DownloadPath);
                 await _botClient.SendTextMessageAsync(
                     chatId: e.Message.Chat,
-                    text: "File from " + _settings.DownloadAdress + "to " + _settings.DownloadPath +
-                          " downloaded successfully."
+                    text: downloadmessage
                 );
             }
 
