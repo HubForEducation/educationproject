@@ -3,6 +3,7 @@ using System.IO;
 using System.Net;
 using System.Text;
 using System.Threading;
+using Com.CloudRail.SI.ServiceCode.Commands;
 using Telegram.Bot;
 using Telegram.Bot.Args;
 
@@ -119,6 +120,16 @@ namespace TelegramBot
                 );
             }
 
+            if (e.Message.Text.StartsWith("/get "))
+            {
+                var message = e.Message.Text.Substring(5);
+                var files = BotEngine.Get(message);
+                await _botClient.SendTextMessageAsync(
+                    chatId: e.Message.Chat,
+                    text: files
+                );
+            }
+
             else if (e.Message.Text == "/read")
             {
                 var file = BotEngine.Read(_settings.Read);
@@ -168,11 +179,13 @@ namespace TelegramBot
 
                 BotEngine.Checkedstring = null;
             }
-            else
+            else if (e.Message.Text == "/help")
             {
+                var help = new Help();
+                
                 await _botClient.SendTextMessageAsync(
                     chatId: e.Message.Chat,
-                    text: "Command not found."
+                    text: help.Show()
                 );
             }
         }

@@ -22,11 +22,13 @@ namespace TelegramBot
                     .ForEach(f => fileslist.Add(f));
 
                 var files = string.Join("\n", fileslist.ToArray());
-                return files;
+                var directories = string.Join("\n", Directory.GetDirectories(get));
+                return files + "\n" + directories;
+                
             }
             catch (DirectoryNotFoundException)
             {
-                return "Directory " + get + "not found.";
+                return "Directory " + get + " not found.";
             }
             catch (ArgumentNullException)
             {
