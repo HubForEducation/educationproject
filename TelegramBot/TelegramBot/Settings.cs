@@ -8,8 +8,8 @@ namespace TelegramBot
     [Serializable]
     public class Settings
     {
-        public string apiToken = "754861830:AAE98RFY3OILvgThAG7RR_livVSHbnJp5Wc";
-        public string chatID = "721567903";
+        public string ApiToken = "754861830:AAE98RFY3OILvgThAG7RR_livVSHbnJp5Wc";
+        public string ChatId = "721567903";
         public string Get = "./";
         public string Read = "./";
         public string DownloadAdress = "./";
@@ -24,8 +24,8 @@ namespace TelegramBot
             var serializeObject = JsonConvert.SerializeObject(settings);
 
             await File.WriteAllTextAsync(SaveLoadSettingsPath + "./settings.json", serializeObject);
-            
-            Console.WriteLine( "Settings saved");
+
+            Console.WriteLine("Settings saved");
         }
 
         public async Task<Settings> Load()
@@ -42,7 +42,6 @@ namespace TelegramBot
             Console.WriteLine("Setting load from file " + "./settings.json");
 
             return settings;
-
         }
     }
 }

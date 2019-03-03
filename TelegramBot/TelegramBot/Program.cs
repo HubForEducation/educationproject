@@ -13,8 +13,8 @@ namespace TelegramBot
         static ITelegramBotClient _botClient;
         static readonly BotEngine BotEngine = new BotEngine();
         static Settings _settings = new Settings();
-        public static string ApiToken = _settings.apiToken;
-        public static string ChatId = _settings.chatID;
+        public static string ApiToken = _settings.ApiToken;
+        public static string ChatId = _settings.ChatId;
 
         static void Main()
         {
@@ -43,12 +43,12 @@ namespace TelegramBot
 
                     string urlString = "https://api.telegram.org/bot{0}/sendMessage?chat_id={1}&text={2}";
                     string apiToken = ApiToken;
-                    string chatId = Program.ChatId;
+                    string chatId = ChatId;
                     string text = checkedanswer;
                     urlString = String.Format(urlString, apiToken, chatId, text);
                     WebRequest request = WebRequest.Create(urlString);
                     Stream rs = request.GetResponse().GetResponseStream();
-                    StreamReader reader = new StreamReader(rs);
+                    StreamReader reader = new StreamReader(rs ?? throw new InvalidOperationException());
                     string line = "";
                     StringBuilder sb = new StringBuilder();
                     while (line != null)
@@ -57,13 +57,11 @@ namespace TelegramBot
                         if (line != null)
                             sb.Append(line);
                     }
-
                 }
 
                 BotEngine.Checkedstring = null;
                 Thread.Sleep(_settings.CheckTime);
             }
-            
         }
 
         public static int Keypressed;

@@ -31,7 +31,7 @@ namespace TelegramBot
             catch (ArgumentNullException)
             {
                 return "Directory " + get + " can not be NULL.";
-            }           
+            }
         }
 
         public string Read(string read)
@@ -91,18 +91,13 @@ namespace TelegramBot
 
         public void Check(string check)
         {
-
             FileSystemWatcher watcher = new FileSystemWatcher();
             watcher.Path = check;
-
-
-            watcher.NotifyFilter = NotifyFilters.LastAccess | NotifyFilters.LastWrite
-                                                            | NotifyFilters.FileName | NotifyFilters.DirectoryName;
-
+            watcher.NotifyFilter = NotifyFilters.LastAccess | NotifyFilters.LastWrite | NotifyFilters.FileName |
+                                   NotifyFilters.DirectoryName;
             watcher.Changed += CheckOnChanged;
             watcher.Created += CheckOnChanged;
             watcher.Deleted += CheckOnChanged;
-
             try
             {
                 watcher.EnableRaisingEvents = true;
@@ -112,23 +107,19 @@ namespace TelegramBot
                 watcher.Path = "./";
                 watcher.EnableRaisingEvents = true;
             }
-
-            
-
         }
 
         public static string Checkedstring { get; set; }
-
-        private static void CheckOnChanged(object source, FileSystemEventArgs e)
-        {
-            Checkedstring = "File: " + e.FullPath + " " + e.ChangeType;
-            Checked(Checkedstring);
-        }
 
         public static string Checked(string checkedstring)
         {
             return checkedstring;
         }
 
+        private static void CheckOnChanged(object source, FileSystemEventArgs e)
+        {
+            Checkedstring = "File: " + e.FullPath + " " + e.ChangeType;
+            Checked(Checkedstring);
+        }
     }
 }
