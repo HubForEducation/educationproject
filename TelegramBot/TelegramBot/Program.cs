@@ -3,7 +3,6 @@ using System.IO;
 using System.Net;
 using System.Text;
 using System.Threading;
-using Com.CloudRail.SI.ServiceCode.Commands;
 using Telegram.Bot;
 using Telegram.Bot.Args;
 
@@ -12,7 +11,7 @@ namespace TelegramBot
     class Program
     {
         static ITelegramBotClient _botClient;
-        static readonly BotEngine BotEngine = new BotEngine();
+        static readonly BotLogic BotLogic = new BotLogic();
         static Settings _settings = new Settings();
         public static string ApiToken = _settings.ApiToken;
         public static string ChatId = _settings.ChatId;
@@ -36,8 +35,8 @@ namespace TelegramBot
         {
             while (true)
             {
-                BotEngine.Check(_settings.CheckPath);
-                string checkedanswer = BotEngine.Checked(BotEngine.Checkedstring);
+                BotLogic.Check(_settings.CheckPath);
+                string checkedanswer = BotLogic.Checked(BotLogic.Checkedstring);
                 if (checkedanswer != null)
                 {
                     //api.telegram.org/bot<Bot_token>/getUpdates
@@ -60,7 +59,7 @@ namespace TelegramBot
                     }
                 }
 
-                BotEngine.Checkedstring = null;
+                BotLogic.Checkedstring = null;
                 Thread.Sleep(_settings.CheckTime);
             }
         }
@@ -113,7 +112,7 @@ namespace TelegramBot
         {
             if (e.Message.Text == "/get")
             {
-                var files = BotEngine.Get(_settings.Get);
+                var files = BotLogic.Get(_settings.Get);
                 await _botClient.SendTextMessageAsync(
                     chatId: e.Message.Chat,
                     text: files
@@ -123,7 +122,7 @@ namespace TelegramBot
             if (e.Message.Text.StartsWith("/get "))
             {
                 var message = e.Message.Text.Substring(5);
-                var files = BotEngine.Get(message);
+                var files = BotLogic.Get(message);
                 await _botClient.SendTextMessageAsync(
                     chatId: e.Message.Chat,
                     text: files
@@ -132,7 +131,7 @@ namespace TelegramBot
 
             else if (e.Message.Text == "/read")
             {
-                var file = BotEngine.Read(_settings.Read);
+                var file = BotLogic.Read(_settings.Read);
 
                 await _botClient.SendTextMessageAsync(
                     chatId: e.Message.Chat,
@@ -142,7 +141,7 @@ namespace TelegramBot
 
             else if (e.Message.Text == "/download")
             {
-                var downloadmessage = BotEngine.Download(_settings.DownloadAdress, _settings.DownloadPath);
+                var downloadmessage = BotLogic.Download(_settings.DownloadAdress, _settings.DownloadPath);
                 await _botClient.SendTextMessageAsync(
                     chatId: e.Message.Chat,
                     text: downloadmessage
@@ -151,7 +150,7 @@ namespace TelegramBot
 
             else if (e.Message.Text == "/command")
             {
-                var commandanswer = BotEngine.Command(_settings.Command);
+                var commandanswer = BotLogic.Command(_settings.Command);
 
                 await _botClient.SendTextMessageAsync(
                     chatId: e.Message.Chat,
@@ -160,8 +159,8 @@ namespace TelegramBot
             }
             else if (e.Message.Text == "/check")
             {
-                BotEngine.Check(_settings.CheckPath);
-                string checkedanswer = BotEngine.Checked(BotEngine.Checkedstring);
+                BotLogic.Check(_settings.CheckPath);
+                string checkedanswer = BotLogic.Checked(BotLogic.Checkedstring);
                 if (checkedanswer != null)
                 {
                     await _botClient.SendTextMessageAsync(
@@ -177,7 +176,7 @@ namespace TelegramBot
                     );
                 }
 
-                BotEngine.Checkedstring = null;
+                BotLogic.Checkedstring = null;
             }
             else if (e.Message.Text == "/help")
             {

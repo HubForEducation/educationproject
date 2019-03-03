@@ -7,7 +7,7 @@ using System.Net;
 
 namespace TelegramBot
 {
-    public class BotEngine
+    public class BotLogic
     {
         public string Get(string get)
         {
