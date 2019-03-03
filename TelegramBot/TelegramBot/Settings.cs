@@ -10,14 +10,14 @@ namespace TelegramBot
     {
         public string apiToken = "754861830:AAE98RFY3OILvgThAG7RR_livVSHbnJp5Wc";
         public string chatID = "721567903";
-        public string Get;
-        public string Read;
-        public string DownloadAdress;
-        public string DownloadPath;
-        public string Command;
+        public string Get = "./";
+        public string Read = "./";
+        public string DownloadAdress = "./";
+        public string DownloadPath = "./";
+        public string Command = "ipconfig";
         public string CheckPath;
-        public int CheckTime;
-        public string SaveLoadSettingsPath;
+        public int CheckTime = 8888;
+        public string SaveLoadSettingsPath = "./";
 
         public async Task Save(Settings settings)
         {

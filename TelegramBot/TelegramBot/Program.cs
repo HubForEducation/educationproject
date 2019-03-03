@@ -3,10 +3,8 @@ using System.IO;
 using System.Net;
 using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using Telegram.Bot;
 using Telegram.Bot.Args;
-using Telegram.Bot.Types;
 
 namespace TelegramBot
 {
@@ -15,8 +13,8 @@ namespace TelegramBot
         static ITelegramBotClient _botClient;
         static readonly BotEngine BotEngine = new BotEngine();
         static Settings _settings = new Settings();
-        public static string apiToken = _settings.apiToken;
-        public static string chatID = _settings.chatID;
+        public static string ApiToken = _settings.apiToken;
+        public static string ChatId = _settings.chatID;
 
         static void Main()
         {
@@ -26,7 +24,7 @@ namespace TelegramBot
             Thread checkUpdateThread = new Thread(CheckUpdate);
             checkUpdateThread.Start();
 
-            _botClient = new TelegramBotClient(Program.apiToken);
+            _botClient = new TelegramBotClient(ApiToken);
             _botClient.OnMessage += Bot_Commands;
 
             _botClient.StartReceiving();
@@ -44,8 +42,8 @@ namespace TelegramBot
                     //api.telegram.org/bot<Bot_token>/getUpdates
 
                     string urlString = "https://api.telegram.org/bot{0}/sendMessage?chat_id={1}&text={2}";
-                    string apiToken = Program.apiToken;
-                    string chatId = Program.chatID;
+                    string apiToken = ApiToken;
+                    string chatId = Program.ChatId;
                     string text = checkedanswer;
                     urlString = String.Format(urlString, apiToken, chatId, text);
                     WebRequest request = WebRequest.Create(urlString);
@@ -60,8 +58,6 @@ namespace TelegramBot
                             sb.Append(line);
                     }
 
-                    string response = sb.ToString();
-                    // Do what you want with response
                 }
 
                 BotEngine.Checkedstring = null;

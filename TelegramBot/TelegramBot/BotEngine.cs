@@ -4,9 +4,6 @@ using System.Diagnostics;
 using System.Linq;
 using System.IO;
 using System.Net;
-using System.Threading;
-using Telegram.Bot;
-using Telegram.Bot.Args;
 
 namespace TelegramBot
 {
@@ -106,7 +103,17 @@ namespace TelegramBot
             watcher.Created += CheckOnChanged;
             watcher.Deleted += CheckOnChanged;
 
-            watcher.EnableRaisingEvents = true;
+            try
+            {
+                watcher.EnableRaisingEvents = true;
+            }
+            catch (FileNotFoundException)
+            {
+                watcher.Path = "./";
+                watcher.EnableRaisingEvents = true;
+            }
+
+            
 
         }
 
