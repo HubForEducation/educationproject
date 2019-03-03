@@ -107,6 +107,10 @@ namespace TelegramBot
                 watcher.Path = "./";
                 watcher.EnableRaisingEvents = true;
             }
+
+            watcher.Changed += CheckOnChanged;
+            watcher.Created += CheckOnChanged;
+            watcher.Deleted += CheckOnChanged;
         }
 
         public static string Checkedstring { get; set; }
