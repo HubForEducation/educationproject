@@ -9,7 +9,7 @@ namespace TelegramBot
     public class Settings
     {
         public string ApiToken = "754861830:AAE98RFY3OILvgThAG7RR_livVSHbnJp5Wc";
-        public string ChatId = "721567903";
+        public string ChatId = "721567903"; //api.telegram.org/bot<Bot_token>/getUpdates
         public string Get = "./";
         public string Read = "./read.txt";
         public string DownloadAdress = "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png";
