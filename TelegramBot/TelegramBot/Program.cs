@@ -11,7 +11,7 @@ namespace TelegramBot
     class Program
     {
         static ITelegramBotClient _botClient;
-        static readonly BotLogic BotLogic = new BotLogic();
+        static readonly BotEngine BotEngine = new BotEngine();
         static Settings _settings = new Settings();
         public static string ApiToken = _settings.ApiToken;
         public static string ChatId = _settings.ChatId;
@@ -25,7 +25,7 @@ namespace TelegramBot
             checkUpdateThread.Start();
 
             _botClient = new TelegramBotClient(ApiToken);
-            _botClient.OnMessage += BotCommands.GetCommands;
+            _botClient.OnMessage += Bot_Commands;
 
             _botClient.StartReceiving();
             Thread.Sleep(int.MaxValue);
@@ -35,8 +35,8 @@ namespace TelegramBot
         {
             while (true)
             {
-                BotLogic.Check(_settings.CheckPath);
-                string checkedanswer = BotLogic.Checked(BotLogic.Checkedstring);
+                BotEngine.Check(_settings.CheckPath);
+                string checkedanswer = BotEngine.Checked(BotEngine.Checkedstring);
                 if (checkedanswer != null)
                 {
                     //api.telegram.org/bot<Bot_token>/getUpdates
@@ -59,7 +59,7 @@ namespace TelegramBot
                     }
                 }
 
-                BotLogic.Checkedstring = null;
+                BotEngine.Checkedstring = null;
                 Thread.Sleep(_settings.CheckTime);
             }
         }
@@ -107,8 +107,6 @@ namespace TelegramBot
                 }
             } while (Keypressed != 3);
         }
-<<<<<<< HEAD
-=======
 
         static async void Bot_Commands(object sender, MessageEventArgs e)
         {
@@ -133,11 +131,10 @@ namespace TelegramBot
 
             else if (e.Message.Text == "/download")
             {
-                BotEngine.Download(_settings.DownloadAdress, _settings.DownloadPath);
+                var downloadmessage = BotEngine.Download(_settings.DownloadAdress, _settings.DownloadPath);
                 await _botClient.SendTextMessageAsync(
                     chatId: e.Message.Chat,
-                    text: "File from " + _settings.DownloadAdress + "to " + _settings.DownloadPath +
-                          " downloaded successfully."
+                    text: downloadmessage
                 );
             }
 
@@ -179,6 +176,5 @@ namespace TelegramBot
                 );
             }
         }
->>>>>>> parent of 8d7219f... Big bug fixes.
     }
 }
