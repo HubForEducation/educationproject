@@ -34,7 +34,7 @@ namespace TelegramBot
             BotClient.OnMessage += get.Api;
             var read = new Read(Settings.Read, BotClient);
             BotClient.OnMessage += read.Api;
-            var download = new Download(Settings.DownloadAdress, Settings.DownloadPath, BotClient);
+            var download = new Download(Settings.DownloadAdress, BotClient);
             BotClient.OnMessage += download.Api;
             var command = new Command(Settings.Command, BotClient);
             BotClient.OnMessage += command.Api;

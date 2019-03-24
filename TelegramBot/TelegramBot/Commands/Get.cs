@@ -7,15 +7,15 @@ using Telegram.Bot.Args;
 
 namespace TelegramBot.Commands
 {
-    public class Get
+    public class Get : ICommands
     {
-        private string _settingsGet { get; set; }
+        private string SettingsGet { get; set; }
         private ITelegramBotClient BotClient { get; set; }
 
-        public Get(string _settingsGet, ITelegramBotClient BotClient)
+        public Get(string settingsGet, ITelegramBotClient botClient)
         {
-            this._settingsGet = _settingsGet;
-            this.BotClient = BotClient;
+            SettingsGet = settingsGet;
+            BotClient = botClient;
         }
 
         public string Logic(string get)
@@ -48,7 +48,7 @@ namespace TelegramBot.Commands
 
             if (e.Message.Text == "/get")
             {
-                var files = Logic(_settingsGet);
+                var files = Logic(SettingsGet);
                 await BotClient.SendTextMessageAsync(
                     chatId: e.Message.Chat,
                     text: files

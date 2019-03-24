@@ -6,36 +6,35 @@ using Telegram.Bot.Args;
 
 namespace TelegramBot.Commands
 {
-    class Download
+    class Download : ICommands
     {
-        private string downloadAdress { get; set; }
-        private string downloadPath { get; set; }
+        Settings settings = new Settings();
+        private string DownloadAdress { get; set; }
         private ITelegramBotClient BotClient { get; set; }
 
-        public Download(string downloadAdress, string downloadPath, ITelegramBotClient botClient)
+        public Download(string downloadAdress, ITelegramBotClient botClient)
         {
-            this.downloadAdress = downloadAdress;
-            this.downloadPath = downloadPath;
+            DownloadAdress = downloadAdress;
             BotClient = botClient;
         }
 
-        public string Logic(string downloadAdress, string downloadPath)
+        public string Logic(string downloadAdress)
         {
             try
             {
                 Random pictureseed = new Random();
                 var client = new WebClient();
-                client.DownloadFile(downloadAdress, downloadPath + "botpicture" + pictureseed.Next() + ".png");
-                return "File from " + downloadAdress + " to " + downloadPath +
+                client.DownloadFile(downloadAdress, settings.DownloadPath + "botpicture" + pictureseed.Next() + ".png");
+                return "File from " + downloadAdress + " to " + settings.DownloadPath +
                        " downloaded successfully.";
             }
             catch (WebException)
             {
-                return "File link " + downloadAdress + " is incorrect, or file in" + downloadPath + "can not be created.";
+                return "File link " + downloadAdress + " is incorrect, or file in" + settings.DownloadPath + "can not be created.";
             }
             catch (DirectoryNotFoundException)
             {
-                return "File from " + downloadAdress + " to " + downloadPath +
+                return "File from " + downloadAdress + " to " + settings.DownloadPath +
                        " not downloaded. Directory nor found.";
             }
             catch (ArgumentNullException)
@@ -48,7 +47,7 @@ namespace TelegramBot.Commands
         {
             if (e.Message.Text == "/download")
             {
-                var downloadmessage = Logic(downloadAdress, downloadPath);
+                var downloadmessage = Logic(DownloadAdress);
                 await BotClient.SendTextMessageAsync(
                     chatId: e.Message.Chat,
                     text: downloadmessage

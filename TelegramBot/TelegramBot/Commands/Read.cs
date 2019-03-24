@@ -5,7 +5,7 @@ using Telegram.Bot.Args;
 
 namespace TelegramBot.Commands
 {
-    class Read
+    class Read : ICommands
     {
         private string SettingsRead { get; set; }
         private ITelegramBotClient BotClient { get; set; }

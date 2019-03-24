@@ -5,15 +5,15 @@ using Telegram.Bot.Args;
 
 namespace TelegramBot.Commands
 {
-    class Command
+    class Command : ICommands
     {
         private string command { get; set; }
         private ITelegramBotClient BotClient { get; set; }
 
-        public Command(string command, ITelegramBotClient BotClient)
+        public Command(string command, ITelegramBotClient botClient)
         {
             this.command = command;
-            this.BotClient = BotClient;
+            BotClient = botClient;
         }
 
         public string Logic(string command)
