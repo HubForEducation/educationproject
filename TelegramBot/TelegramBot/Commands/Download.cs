@@ -53,6 +53,25 @@ namespace TelegramBot.Commands
                     text: downloadmessage
                 );
             }
+
+            if (e.Message.Text.StartsWith("/download"))
+            {
+                string downloadanswer;
+
+                if (e.Message.Text.Length == 9)
+                {
+                    downloadanswer = Logic(DownloadAdress);
+                }
+                else
+                {
+                    var newmessage = e.Message.Text.Remove(0, 10);
+                    downloadanswer = Logic(newmessage);
+                }
+                await BotClient.SendTextMessageAsync(
+                    chatId: e.Message.Chat,
+                    text: downloadanswer
+                );
+            }
         }
     }
 }

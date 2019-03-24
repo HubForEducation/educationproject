@@ -7,12 +7,12 @@ namespace TelegramBot.Commands
 {
     class Command : ICommands
     {
-        private string command { get; set; }
+        private string CommandString { get; set; }
         private ITelegramBotClient BotClient { get; set; }
 
         public Command(string command, ITelegramBotClient botClient)
         {
-            this.command = command;
+            CommandString = command;
             BotClient = botClient;
         }
 
@@ -35,13 +35,22 @@ namespace TelegramBot.Commands
 
         public async void Api(object sender, MessageEventArgs e)
         {
-            if (e.Message.Text == "/command")
+            if (e.Message.Text.StartsWith("/command"))
             {
-                var commandanswer = Logic(command);
+                string commandaswer;
 
+                if (e.Message.Text.Length == 8)
+                {
+                    commandaswer = Logic(CommandString);
+                }
+                else
+                {
+                    var newmessage = e.Message.Text.Remove(0, 9);
+                    commandaswer = Logic(newmessage);
+                }
                 await BotClient.SendTextMessageAsync(
                     chatId: e.Message.Chat,
-                    text: commandanswer
+                    text: commandaswer
                 );
             }
         }

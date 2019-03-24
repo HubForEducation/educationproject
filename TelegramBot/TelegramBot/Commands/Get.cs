@@ -45,13 +45,22 @@ namespace TelegramBot.Commands
 
         public async void Api(object sender, MessageEventArgs e)
         {
-
-            if (e.Message.Text == "/get")
+            if (e.Message.Text.StartsWith("/get"))
             {
-                var files = Logic(SettingsGet);
+                string getanswer;
+
+                if (e.Message.Text.Length == 4)
+                {
+                    getanswer = Logic(SettingsGet);
+                }
+                else
+                {
+                    var newmessage = e.Message.Text.Remove(0, 5);
+                    getanswer = Logic(newmessage);
+                }
                 await BotClient.SendTextMessageAsync(
                     chatId: e.Message.Chat,
-                    text: files
+                    text: getanswer
                 );
             }
         }
