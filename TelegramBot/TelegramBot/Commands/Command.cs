@@ -5,14 +5,14 @@ using Telegram.Bot.Args;
 
 namespace TelegramBot.Commands
 {
-    class Cmd : ICommands
+    class Command : ICommands
     {
-        private string SettingsCms { get; set; }
+        private string CommandString { get; set; }
         private ITelegramBotClient BotClient { get; set; }
 
-        public Cmd(string cmd, ITelegramBotClient botClient)
+        public Command(string command, ITelegramBotClient botClient)
         {
-            SettingsCms = cmd;
+            CommandString = command;
             BotClient = botClient;
         }
 
@@ -37,20 +37,20 @@ namespace TelegramBot.Commands
         {
             if (e.Message.Text.StartsWith("/command"))
             {
-                string cmddaswer;
+                string commandaswer;
 
                 if (e.Message.Text.Length == 8)
                 {
-                    cmddaswer = Logic(SettingsCms);
+                    commandaswer = Logic(CommandString);
                 }
                 else
                 {
                     var newmessage = e.Message.Text.Remove(0, 9);
-                    cmddaswer = Logic(newmessage);
+                    commandaswer = Logic(newmessage);
                 }
                 await BotClient.SendTextMessageAsync(
                     chatId: e.Message.Chat,
-                    text: cmddaswer
+                    text: commandaswer
                 );
             }
         }
