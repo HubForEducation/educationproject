@@ -1,15 +1,19 @@
 ﻿using System;
 using System.IO;
+using System.Threading;
 
 namespace TelegramBot
 {
     class Menu
     {
-        static Settings _settings = new Settings();
+        CancellationTokenSource source = new CancellationTokenSource();
+        CancellationToken token = new CancellationToken();
 
-        public static int Keypressed;
+        Settings _settings = new Settings();
 
-        public static async void Get()
+        public int Keypressed;
+
+        public async void Get()
         {
             do
             {

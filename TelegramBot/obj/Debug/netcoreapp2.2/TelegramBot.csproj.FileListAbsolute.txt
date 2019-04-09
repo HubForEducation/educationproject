@@ -20,3 +20,14 @@ C:\Users\Anonymous\Desktop\HubForEducation\educationproject\TelegramBot\Telegram
 C:\Users\Anonymous\Desktop\HubForEducation\educationproject\TelegramBot\TelegramBot\obj\Debug\netcoreapp2.2\TelegramBot.AssemblyInfo.cs
 C:\Users\Anonymous\Desktop\HubForEducation\educationproject\TelegramBot\TelegramBot\obj\Debug\netcoreapp2.2\TelegramBot.dll
 C:\Users\Anonymous\Desktop\HubForEducation\educationproject\TelegramBot\TelegramBot\obj\Debug\netcoreapp2.2\TelegramBot.pdb
+C:\Users\Anonymous\Desktop\HubForEducation\telegrambot\TelegramBot\bin\Debug\netcoreapp2.2\TelegramBot.deps.json
+C:\Users\Anonymous\Desktop\HubForEducation\telegrambot\TelegramBot\bin\Debug\netcoreapp2.2\TelegramBot.runtimeconfig.json
+C:\Users\Anonymous\Desktop\HubForEducation\telegrambot\TelegramBot\bin\Debug\netcoreapp2.2\TelegramBot.runtimeconfig.dev.json
+C:\Users\Anonymous\Desktop\HubForEducation\telegrambot\TelegramBot\bin\Debug\netcoreapp2.2\TelegramBot.dll
+C:\Users\Anonymous\Desktop\HubForEducation\telegrambot\TelegramBot\bin\Debug\netcoreapp2.2\TelegramBot.pdb
+C:\Users\Anonymous\Desktop\HubForEducation\telegrambot\TelegramBot\obj\Debug\netcoreapp2.2\TelegramBot.csprojAssemblyReference.cache
+C:\Users\Anonymous\Desktop\HubForEducation\telegrambot\TelegramBot\obj\Debug\netcoreapp2.2\TelegramBot.csproj.CoreCompileInputs.cache
+C:\Users\Anonymous\Desktop\HubForEducation\telegrambot\TelegramBot\obj\Debug\netcoreapp2.2\TelegramBot.AssemblyInfoInputs.cache
+C:\Users\Anonymous\Desktop\HubForEducation\telegrambot\TelegramBot\obj\Debug\netcoreapp2.2\TelegramBot.AssemblyInfo.cs
+C:\Users\Anonymous\Desktop\HubForEducation\telegrambot\TelegramBot\obj\Debug\netcoreapp2.2\TelegramBot.dll
+C:\Users\Anonymous\Desktop\HubForEducation\telegrambot\TelegramBot\obj\Debug\netcoreapp2.2\TelegramBot.pdb

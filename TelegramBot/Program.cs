@@ -15,12 +15,11 @@ namespace TelegramBot
 
         static void Main()
         {
-            Thread menuThread = new Thread(Menu.Get);
-            menuThread.Start();
-
-            //Update update = new Update();
-            //Thread checkUpdateThread = new Thread(delegate () { TelegramBot.Update(); });
-            //checkUpdateThread.Start();
+            Task.Factory.StartNew(() =>
+            {
+                var menu = new Menu();
+                menu.Get();
+            });
 
             Task.Factory.StartNew(() =>
             {
