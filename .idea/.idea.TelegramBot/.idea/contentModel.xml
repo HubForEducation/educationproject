@@ -7,7 +7,16 @@
       <e p="packages" t="ExcludeRecursive" />
       <e p="TelegramBot" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="BotEngine.cs" t="Include" />
+        <e p="Commands" t="Include">
+          <e p="Cmd.cs" t="Include" />
+          <e p="Command.cs~HEAD" t="Include" />
+          <e p="Command.cs~parent of 687fc9c... CMD Rename" t="Include" />
+          <e p="Download.cs" t="Include" />
+          <e p="Get.cs" t="Include" />
+          <e p="ICommands.cs" t="Include" />
+          <e p="Read.cs" t="Include" />
+        </e>
+        <e p="Menu.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.2" t="Include">
@@ -17,7 +26,17 @@
         </e>
         <e p="Program.cs" t="Include" />
         <e p="Settings.cs" t="Include" />
+        <e p="TelegramBot" t="Include">
+          <e p="obj" t="Include">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp2.2" t="Include">
+                <e p="TelegramBot.csproj.CoreCompileInputs.cache" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
         <e p="TelegramBot.csproj" t="IncludeRecursive" />
+        <e p="Update.cs" t="Include" />
       </e>
       <e p="TelegramBot.sln" t="IncludeFlat" />
     </e>
